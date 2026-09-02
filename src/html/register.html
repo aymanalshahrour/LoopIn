@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register Page</title>
     <link rel="stylesheet" href="../css/registerpage.css">
+    <script src="../javascript/register.js" defer></script>
 
 </head>
 <body>
@@ -12,8 +13,9 @@
 <div class="register-box">
     <h2>Create an Account</h2>
 
-    <form action="/register" method="POST">
 
+
+    <form id="register-form">
         <div class="input-group">
             <label for="username">Username</label>
             <input type="text" id="username" name="username" required placeholder="Choose a username">

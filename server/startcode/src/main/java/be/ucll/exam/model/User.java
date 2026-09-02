@@ -4,7 +4,6 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
-import org.hibernate.validator.constraints.Range;
 
 import java.time.LocalDate;
 
@@ -17,7 +16,7 @@ public class User {
     private long id;
 
     @NotBlank(message = "Name is required.")
-    private String userName;
+    private String username;
 
     @Email(message = "E-mail must be a valid email format.")
     private String email;
@@ -30,7 +29,7 @@ public class User {
 
     public User(String name, String email, String password) {
         setEmail(email);
-        setUserName(name);
+        setUsername(name);
         setPassword(password);
     }
 
@@ -38,8 +37,8 @@ public class User {
         return start2.isBefore(end1) && end2.isAfter(start1);
     }
 
-    public String getUserName() {
-        return userName;
+    public String getUsername() {
+        return username;
     }
 
 
@@ -51,8 +50,8 @@ public class User {
         return password;
     }
 
-    public void setUserName(String name) {
-        this.userName = name;
+    public void setUsername(String name) {
+        this.username = name;
     }
 
 

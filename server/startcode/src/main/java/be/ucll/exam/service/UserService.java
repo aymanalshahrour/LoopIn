@@ -19,4 +19,18 @@ public class UserService {
     public List<User> getAllUsers() {
         return userRepository.findAll();
     }
+
+
+    public User addUserAndCheckIfUserNameIsValid(User user) {
+        String username = user.getUsername();
+
+        for (User everyUser : getAllUsers()) {
+            if (everyUser.getUsername().equals(username)) {
+                throw new RuntimeException("User already exists");
+            }
+        }
+        userRepository.save(user);
+        return user;
+    }
+
 }
