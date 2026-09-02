@@ -23,6 +23,12 @@ public class UserRestController {
         return userService.getAllUsers();
     }
 
+//  users/user/{USERname}/{pass}
+    @GetMapping("/user/{username}/{password}")
+    public boolean findUserAndValidatedUserPassword(@PathVariable String username,@PathVariable String password){
+        return userService.findUserAndValidatedUserPassword(username, password);
+    }
+
     @PostMapping("/adduser")
     public User addUserAndCheckIfUserNameIsValid(@RequestBody User user){
         return userService.addUserAndCheckIfUserNameIsValid(user);
