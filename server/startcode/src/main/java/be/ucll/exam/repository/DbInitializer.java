@@ -19,8 +19,8 @@ public class DbInitializer {
     @PostConstruct
     public void initialize() {
 
-        User user1 = new User("John Doe", 25, "john.doe@ucll.be", "john1234");
-        User user2 = new User("Jane Toe", 30, "jane.toe@ucll.be", "jane1234");
+        User user1 = new User("John Doe",  "john.doe@ucll.be", "john1234");
+        User user2 = new User("Jane Toe",  "jane.toe@ucll.be", "jane1234");
 
         userRepository.save(user1);
         userRepository.save(user2);

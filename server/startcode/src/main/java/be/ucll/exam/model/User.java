@@ -17,10 +17,7 @@ public class User {
     private long id;
 
     @NotBlank(message = "Name is required.")
-    private String name;
-
-    @Range(min = 0, max = 100, message = "Age must be a positive integer between 1 and 100.")
-    private int age;
+    private String userName;
 
     @Email(message = "E-mail must be a valid email format.")
     private String email;
@@ -31,10 +28,9 @@ public class User {
     protected User() {
     }
 
-    public User(String name, int age, String email, String password) {
-        setAge(age);
+    public User(String name, String email, String password) {
         setEmail(email);
-        setName(name);
+        setUserName(name);
         setPassword(password);
     }
 
@@ -42,13 +38,10 @@ public class User {
         return start2.isBefore(end1) && end2.isAfter(start1);
     }
 
-    public String getName() {
-        return name;
+    public String getUserName() {
+        return userName;
     }
 
-    public int getAge() {
-        return age;
-    }
 
     public String getEmail() {
         return email;
@@ -58,13 +51,10 @@ public class User {
         return password;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setUserName(String name) {
+        this.userName = name;
     }
 
-    public void setAge(int age) {
-        this.age = age;
-    }
 
     public void setEmail(String email) {
         this.email = email;
@@ -74,19 +64,7 @@ public class User {
         this.password = password;
     }
 
-    @Override
-    public boolean equals(Object obj) {
-        if (obj == null) return false;
-        if (obj == this) return true;
-        if (!(obj instanceof User)) return false;
-        User other = (User) obj;
-        return name.equals(other.name) && age == other.age && email.equals(other.email) && password.equals(other.password);
-    }
 
-    @Override
-    public String toString() {
-        return "User [name=" + name + ", age=" + age + ", email=" + email + ", password=" + password + "]";
-    }
 
     public void setId(long id) {
         this.id = id;

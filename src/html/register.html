@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register Page</title>
+    <link rel="stylesheet" href="../css/registerpage.css">
 
 </head>
 <body>
@@ -46,21 +47,6 @@
     </div>
 </div>
 
-<script>
-    const passwordInput = document.getElementById('password');
-    const confirmPasswordInput = document.getElementById('confirm-password');
-    const showPasswordCheckbox = document.getElementById('show-password-checkbox');
-
-    showPasswordCheckbox.addEventListener('change', function() {
-        if (this.checked) {
-            passwordInput.type = 'text';
-            confirmPasswordInput.type = 'text';
-        } else {
-            passwordInput.type = 'password';
-            confirmPasswordInput.type = 'password';
-        }
-    });
-</script>
 
 </body>
 </html>
