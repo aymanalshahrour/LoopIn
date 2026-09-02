@@ -36,7 +36,8 @@ public class UserService {
     public boolean findUserAndValidatedUserPassword(String username, String password) {
         boolean found = false;
         for (User everyUser : getAllUsers()) {
-            if (everyUser.getUsername().equals(username) && everyUser.getPassword().equals(password)) {
+            if ((everyUser.getUsername().equals(username) || everyUser.getEmail().equals(username))
+                    && everyUser.getPassword().equals(password)) {
                 found = true;
                 break;
             }

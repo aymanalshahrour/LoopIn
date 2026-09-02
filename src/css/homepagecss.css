@@ -72,6 +72,14 @@ body {
     cursor: pointer;
 }
 
+.login-error {
+    min-height: 18px;
+    margin: 0 0 12px;
+    color: #b00020;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
 /* Login Button */
 .login-btn {
     width: 100%;

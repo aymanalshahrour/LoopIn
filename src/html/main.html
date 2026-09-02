@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1v1 Chat Messages</title>
+
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+<!-- Left Sidebar: Contacts -->
+<aside class="sidebar">
+    <div class="sidebar-header">
+        <div class="my-avatar">Me</div>
+        Chats
+    </div>
+
+    <div class="contact-list">
+        <!-- Active Contact -->
+        <div class="contact active">
+            <div class="contact-avatar" style="background-color: #ffb347;"></div>
+            <div class="contact-info">
+                <div class="contact-name">Alex Johnson</div>
+                <div class="contact-last-msg">Sounds good, see you then!</div>
+            </div>
+        </div>
+
+        <!-- Inactive Contact -->
+        <div class="contact">
+            <div class="contact-avatar" style="background-color: #ff6961;"></div>
+            <div class="contact-info">
+                <div class="contact-name">Sarah Smith</div>
+                <div class="contact-last-msg">Did you send the file over?</div>
+            </div>
+        </div>
+
+        <!-- Inactive Contact -->
+        <div class="contact">
+            <div class="contact-avatar" style="background-color: #77dd77;"></div>
+            <div class="contact-info">
+                <div class="contact-name">David Lee</div>
+                <div class="contact-last-msg">Thanks!</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NEW: Add Friend Section -->
+    <div class="add-friend-wrapper">
+        <button class="add-friend-btn" onclick="alert('Add friend modal would open here!')">
+            + Add Friend
+        </button>
+    </div>
+</aside>
+
+<!-- Right Side: Chat Window -->
+<main class="chat-area">
+    <!-- Active Chat Header -->
+    <header class="chat-header">
+        <div class="contact-avatar" style="background-color: #ffb347; width: 42px; height: 42px;"></div>
+        <div>
+            <div class="contact-name">Alex Johnson</div>
+            <div class="status">Online</div>
+        </div>
+    </header>
+
+    <!-- Messages Container -->
+    <div class="chat-messages" id="chat-messages">
+        <div class="message received">
+            Hey, are we still meeting up for coffee at 3 PM?
+            <span class="time">2:15 PM</span>
+        </div>
+
+        <div class="message sent">
+            Yes! Just finishing up some work.
+            <span class="time">2:18 PM</span>
+        </div>
+
+        <div class="message received">
+            Awesome. Sounds good, see you then!
+            <span class="time">2:20 PM</span>
+        </div>
+    </div>
+
+    <!-- Text Input Box -->
+    <div class="chat-input-wrapper">
+        <input type="text" id="message-input" class="chat-input" placeholder="Type a message..." autocomplete="off">
+        <button id="send-button" class="send-btn">➔</button>
+    </div>
+</main>
+
+<!-- JavaScript to handle typing and sending messages locally -->
+<script>
+    const inputField = document.getElementById('message-input');
+    const sendButton = document.getElementById('send-button');
+    const chatMessages = document.getElementById('chat-messages');
+
+    function sendMessage() {
+        const text = inputField.value.trim();
+        if (text !== '') {
+            // Get current time
+            const now = new Date();
+            const timeString = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+
+            // Create a new message bubble
+            const newMessage = document.createElement('div');
+            newMessage.classList.add('message', 'sent');
+            newMessage.innerHTML = `${text} <span class="time">${timeString}</span>`;
+
+            // Add to the chat and clear input
+            chatMessages.appendChild(newMessage);
+            inputField.value = '';
+
+            // Scroll to the bottom of the chat
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+    }
+
+    // Send when clicking the button
+    sendButton.addEventListener('click', sendMessage);
+
+    // Send when pressing the Enter key
+    inputField.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            sendMessage();
+        }
+    });
+</script>
+
+</body>
+</html>

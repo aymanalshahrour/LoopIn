@@ -1,18 +1,62 @@
+async function loginfunction(event){
+    event.preventDefault();
 
-async function getAllUsers(){
+    const usernameOrEmail = document.getElementById("username").value.trim();
+    const password = document.getElementById("password").value;
+    const errorMessage = document.getElementById("login-error");
+
+    if (errorMessage) {
+        errorMessage.textContent = "";
+    }
+
+    try {
+        const loginUsername = await getLoginUsername(usernameOrEmail);
+
+        const response = await fetch(
+            `http://localhost:8080/users/user/${(loginUsername)}/${(password)}`
+        );
+
+        if (!response.ok) {
+            throw new Error(`Login request failed with status ${response.status}`);
+        }
+
+        const isValidUser = await response.json();
+
+        if (isValidUser === true) {
+            window.location.assign("main.html");
+            return;
+        }
+
+        if (errorMessage) {
+            errorMessage.textContent = "Username/email or password is incorrect.";
+        }
+    } catch (error) {
+        console.error("Login failed:", error);
+        if (errorMessage) {
+            errorMessage.textContent = "Cannot connect to the server. Check that the backend is running.";
+        }
+    }
+}
+
+async function getLoginUsername(usernameOrEmail) {
+    if (!usernameOrEmail.includes("@")) {
+        return usernameOrEmail;
+    }
+
     const response = await fetch("http://localhost:8080/users");
-    const user = await response.json(); 
-    user.forEach(u => {
-    console.log(u.username);});
-    
-}
-async function loginfunction(){
 
+    if (!response.ok) {
+        throw new Error(`Users request failed with status ${response.status}`);
+    }
 
-    const username = document.getElementById("username").value
-    console.log(username)
+    const users = await response.json();
+    const matchingUser = users.find((user) => user.email === usernameOrEmail);
 
-
+    return matchingUser ? matchingUser.username : usernameOrEmail;
 }
 
-getAllUsers()
+document.addEventListener("DOMContentLoaded", () => {
+    document
+        .getElementById("login-form")
+        .addEventListener("submit", loginfunction);
+});

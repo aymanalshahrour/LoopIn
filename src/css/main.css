@@ -1,0 +1,238 @@
+    /* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    background-color: #f0f2f5;
+    overflow: hidden;
+}
+
+/* 1. Contacts Sidebar (Left) */
+.sidebar {
+    width: 350px;
+    background-color: #ffffff;
+    border-right: 1px solid #dddddd;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-header {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dddddd;
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.my-avatar {
+    width: 40px;
+    height: 40px;
+    background-color: #007bff;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+.contact-list {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.contact {
+    display: flex;
+    padding: 15px 20px;
+    border-bottom: 1px solid #f0f0f0;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    align-items: center;
+}
+
+.contact:hover {
+    background-color: #f9f9f9;
+}
+
+.contact.active {
+    background-color: #e6f2ff;
+}
+
+.contact-avatar {
+    width: 50px;
+    height: 50px;
+    background-color: #cccccc;
+    border-radius: 50%;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.contact-info {
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.contact-name {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+.contact-last-msg {
+    color: #777;
+    font-size: 13px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+/* Add Friend Section (Bottom of Sidebar) */
+.add-friend-wrapper {
+    padding: 16px 20px;
+    background-color: #ffffff;
+    border-top: 1px solid #dddddd;
+}
+
+.add-friend-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.add-friend-btn:hover {
+    background-color: #218838;
+}
+
+/* 2. Main Chat Area (Right) */
+.chat-area {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #efeae2;
+}
+
+.chat-header {
+    padding: 15px 24px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #dddddd;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.chat-header .contact-name {
+    font-size: 18px;
+    margin-bottom: 2px;
+}
+
+.chat-header .status {
+    font-size: 12px;
+    color: #28a745;
+}
+
+/* Message Bubbles */
+.chat-messages {
+    flex-grow: 1;
+    padding: 24px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.message {
+    max-width: 65%;
+    padding: 12px 16px;
+    border-radius: 16px;
+    font-size: 15px;
+    line-height: 1.4;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.message.received {
+    background-color: #ffffff;
+    color: #333333;
+    align-self: flex-start;
+    border-bottom-left-radius: 4px;
+}
+
+.message.sent {
+    background-color: #007bff;
+    color: #ffffff;
+    align-self: flex-end;
+    border-bottom-right-radius: 4px;
+}
+
+.time {
+    font-size: 11px;
+    margin-top: 4px;
+    text-align: right;
+    display: block;
+}
+
+.received .time { color: #888888; }
+.sent .time { color: #cce5ff; }
+
+/* Input Area */
+.chat-input-wrapper {
+    padding: 16px 24px;
+    background-color: #f0f2f5;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.chat-input {
+    flex-grow: 1;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 24px;
+    font-size: 15px;
+    outline: none;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+.chat-input::placeholder {
+    color: #999999;
+}
+
+.send-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 46px;
+    height: 46px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.send-btn:hover {
+    background-color: #0056b3;
+}
