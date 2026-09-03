@@ -1,90 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>1v1 Chat Messages</title>
 
     <link rel="stylesheet" href="../css/main.css">
 </head>
+
 <body>
 
 <!-- Left Sidebar: Contacts -->
 <aside class="sidebar">
+
+    <!-- Sidebar Header -->
     <div class="sidebar-header">
         <div class="my-avatar">Me</div>
         Chats
     </div>
 
-    <div class="contact-list", id="contact-list">
-        <!-- Active Contact -->
-        <div class="contact active">
-            <div class="contact-avatar" style="background-color: #ffb347;"></div>
-            <div class="contact-info">
-                <div class="contact-name" id="active-chat-name">Select a chat</div>
-                <div class="contact-last-msg">Sounds good, see you then!</div>
-            </div>
-        </div>
+    <!-- Contact List -->
+    <!-- JavaScript will add all users here -->
+    <div class="contact-list" id="contact-list">
 
-        <!-- Inactive Contact -->
-        <div class="contact">
-            <div class="contact-avatar" style="background-color: #ff6961;"></div>
-            <div class="contact-info">
-                <div class="contact-name">Sarah Smith</div>
-                <div class="contact-last-msg">Did you send the file over?</div>
-            </div>
-        </div>
+        <!-- Contacts are created by messaging.js -->
 
+    </div>
 
-
-    <!-- NEW: Add Friend Section -->
+    <!-- Add Friend Section -->
     <div class="add-friend-wrapper">
+
         <button class="add-friend-btn" onclick="alert('Add friend modal would open here!')">
             + Add Friend
         </button>
+
     </div>
+
 </aside>
+
 
 <!-- Right Side: Chat Window -->
 <main class="chat-area">
-    <!-- Active Chat Header -->
+
+    <!-- Chat Header -->
     <header class="chat-header">
-        <div class="contact-avatar" style="background-color: #ffb347; width: 42px; height: 42px;"></div>
-        <div>
-            <div class="contact-name">Alex Johnson</div>
-            <div class="status">Online</div>
+
+        <div
+                class="contact-avatar"
+                id="active-chat-avatar"
+                style="
+                    background-color: #ffb347;
+                    width: 42px;
+                    height: 42px;
+                ">
         </div>
+
+        <div>
+
+            <div
+                    class="contact-name"
+                    id="active-chat-name">
+                Select a chat
+            </div>
+
+            <div class="status" id="active-chat-status">
+                Select a user to start chatting
+            </div>
+
+        </div>
+
     </header>
 
+
     <!-- Messages Container -->
-    <div class="chat-messages" id="chat-messages">
-        <div class="message received">
-            Hey, are we still meeting up for coffee at 3 PM?
-            <span class="time">2:15 PM</span>
-        </div>
+    <div
+            class="chat-messages"
+            id="chat-messages">
 
-        <div class="message sent">
-            Yes! Just finishing up some work.
-            <span class="time">2:18 PM</span>
-        </div>
+        <!-- Messages will be loaded here -->
 
-        <div class="message received">
-            Awesome. Sounds good, see you then!
-            <span class="time">2:20 PM</span>
-        </div>
     </div>
 
-    <!-- Text Input Box -->
+
+    <!-- Text Input -->
     <div class="chat-input-wrapper">
-        <input type="text" id="message-input" class="chat-input" placeholder="Type a message..." autocomplete="off">
-        <button id="send-button" class="send-btn">➔</button>
+
+        <input
+                type="text"
+                id="message-input"
+                class="chat-input"
+                placeholder="Type a message..."
+                autocomplete="off"
+        >
+
+        <button
+                id="send-button"
+                class="send-btn">
+            ➔
+        </button>
+
     </div>
+
 </main>
 
-<!-- JavaScript to handle typing and sending messages locally -->
-<script src="../javascript/messaging.js" defer>
 
-</script>
+<!-- JavaScript -->
+<script src="../javascript/messaging.js" defer></script>
 
 </body>
+
 </html>

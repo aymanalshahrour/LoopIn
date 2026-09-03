@@ -4,35 +4,47 @@ async function loadContacts() {
     const response = await fetch('http://localhost:8080/users');
     const contacts = await response.json();
 
-    let friends = [];
-
-    contacts.forEach(contact => {
-        if (contact.username !== currentUser) {
-            friends.unshift(contact);
-        }
-    });
-
     const contactsList = document.getElementById("contact-list");
 
     contactsList.innerHTML = "";
 
-    friends.forEach(user => {
+    contacts.forEach(user => {
+
+        // Don't show yourself
+        if (user.username === currentUser) {
+            return;
+        }
 
         contactsList.innerHTML += `
-            <div class="contact">
+            <div class="contact" onclick="openChat('${user.username}')">
                 <div class="contact-avatar"
-                     style="background-color: #b300ff;">
+                     style="background-color: blue;">
                 </div>
 
                 <div class="contact-info">
                     <div class="contact-name">${user.username}</div>
-                    <div class="contact-last-msg">${user.username}</div>
+                    <div class="contact-last-msg">
+                        Click to chat
+                    </div>
                 </div>
             </div>
         `;
-
-
     });
+}
+
+function openChat(username) {
+    console.log("Opening chat with:", username);
+
+    // Save who we are chatting with
+    localStorage.setItem("activeChat", username);
+
+    // Change chat header
+    document.querySelector(".chat-header .contact-name").textContent = username;
+
+    // Clear old messages
+    document.getElementById("chat-messages").innerHTML = "";
+
+    // TODO: Load messages between currentUser and username
 }
 
 loadContacts();
