@@ -60,5 +60,3 @@ document.addEventListener("DOMContentLoaded", () => {
         .getElementById("login-form")
         .addEventListener("submit", loginfunction);
 });
-const x = 1;
-// taim and ayman hyua
