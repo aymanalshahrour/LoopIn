@@ -17,7 +17,6 @@ public class MessageRestController {
     public MessageRestController(MessageService messageService) {
         this.messageService = messageService;
     }
-
     @GetMapping
     public List<Message> getAll(){
         return messageService.getAll();
