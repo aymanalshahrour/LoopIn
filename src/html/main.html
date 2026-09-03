@@ -16,12 +16,12 @@
         Chats
     </div>
 
-    <div class="contact-list">
+    <div class="contact-list", id="contact-list">
         <!-- Active Contact -->
         <div class="contact active">
             <div class="contact-avatar" style="background-color: #ffb347;"></div>
             <div class="contact-info">
-                <div class="contact-name">Alex Johnson</div>
+                <div class="contact-name" id="active-chat-name">Select a chat</div>
                 <div class="contact-last-msg">Sounds good, see you then!</div>
             </div>
         </div>
@@ -90,41 +90,8 @@
 </main>
 
 <!-- JavaScript to handle typing and sending messages locally -->
-<script>
-    const inputField = document.getElementById('message-input');
-    const sendButton = document.getElementById('send-button');
-    const chatMessages = document.getElementById('chat-messages');
+<script src="../javascript/messaging.js" defer>
 
-    function sendMessage() {
-        const text = inputField.value.trim();
-        if (text !== '') {
-            // Get current time
-            const now = new Date();
-            const timeString = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-
-            // Create a new message bubble
-            const newMessage = document.createElement('div');
-            newMessage.classList.add('message', 'sent');
-            newMessage.innerHTML = `${text} <span class="time">${timeString}</span>`;
-
-            // Add to the chat and clear input
-            chatMessages.appendChild(newMessage);
-            inputField.value = '';
-
-            // Scroll to the bottom of the chat
-            chatMessages.scrollTop = chatMessages.scrollHeight;
-        }
-    }
-
-    // Send when clicking the button
-    sendButton.addEventListener('click', sendMessage);
-
-    // Send when pressing the Enter key
-    inputField.addEventListener('keypress', function(e) {
-        if (e.key === 'Enter') {
-            sendMessage();
-        }
-    });
 </script>
 
 </body>
