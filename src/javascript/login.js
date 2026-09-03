@@ -22,6 +22,10 @@ async function loginfunction(event){
 
         const isValidUser = await response.json();
 
+        if (isValidUser) {
+            localStorage.setItem("username", usernameOrEmail);
+        }
+
         if (isValidUser === true) {
             window.location.assign("http://localhost:63343/LoopIn/src/html/main.html?_ijt=ok3c1i464eih2e7d08861blatj");
             return;
