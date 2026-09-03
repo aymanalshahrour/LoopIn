@@ -52,37 +52,56 @@ async function sendMessage() {
     let sendToUser = document.getElementById("active-chat-name").textContent;
     const sender = localStorage.getItem('username');
 
-
-    console.log(sendMessageButton);
-    console.log(messageValue);
-    console.log(sendToUser);
-    console.log(sender);
-
+    const response = await fetch("http://localhost:8080/users")
+    const users = await response.json()
+    const validSender = users.find((user) => user.username  === sender)
+    const validReceiver = users.find((user) => user.username === sendToUser)
+    console.log(validReceiver, validSender)
     let message = {
-        senderUsername: sender,
-        receiverUsername: sendToUser,
-        content: messageValue,
-    }
+            senderUsername: sender,
+            receiverUsername: sendToUser,
+            content: messageValue,
+        }
 
-    try {
-        const response = await fetch("http://localhost:8080/messages/send", {
+    if (validSender && validReceiver){
+        try {
+            const response = await fetch("http://localhost:8080/messages/send", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
             },
             body: JSON.stringify(message)
-        });
+            });
 
-        if (!response.ok) {
+            if (!response.ok) {
             const errorMessage = await response.text();
             throw new Error(errorMessage || "failed to send message");
+            }
+
+
+        } catch (error) {
+            console.error("Error:", error);
+        }
+        document.getElementById("message-input").value = "";
+
+        console.log(sendMessageButton);
+        console.log(messageValue);
+        console.log(sendToUser);
+        console.log(sender);
+
+        
+
+
+        }else{
+            console.log("Invalid Sender/Receiver !")
         }
 
+    
+    
 
-    } catch (error) {
-        console.error("Error:", error);
-    }
-    document.getElementById("message-input").value = "";
+
+
+
 
 }
 loadContacts();
