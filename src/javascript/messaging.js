@@ -95,13 +95,36 @@ async function sendMessage() {
         }else{
             console.log("Invalid Sender/Receiver !")
         }
+}
 
-    
-    
+function openAddFriendBox() {
+    const box = document.getElementById("add-friend-box");
+
+    box.style.display = "flex";
+
+    document.getElementById("friend-username").focus();
+}
+
+function closeAddFriendBox() {
+    const box = document.getElementById("add-friend-box");
+
+    box.style.display = "none";
+
+    document.getElementById("friend-username").value = "";
+}
+
+function addFriend() {
+    const username = document.getElementById("friend-username").value.trim();
+
+    if (username === "") {
+        alert("Please enter a username.");
+        return;
+    }
+
+    console.log("Adding friend:", username);
 
 
 
-
-
+    closeAddFriendBox();
 }
 loadContacts();

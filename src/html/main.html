@@ -30,12 +30,26 @@
     </div>
 
     <!-- Add Friend Section -->
-    <div class="add-friend-wrapper">
+    <button class="add-friend-btn" id="add-friend" type="button" onclick="openAddFriendBox()">
+        + Add Friend
+    </button>
 
-        <button class="add-friend-btn" onclick="alert('Add friend modal would open here!')">
-            + Add Friend
-        </button>
+    <!-- Add Friend Box -->
+    <div id="add-friend-box" class="add-friend-overlay">
+        <div class="add-friend-modal">
+            <h2>Add Friend</h2>
 
+            <input
+                    type="text"
+                    id="friend-username"
+                    placeholder="Enter username"
+            >
+
+            <div class="add-friend-buttons">
+                <button type="button" onclick="addFriend()">Add</button>
+                <button type="button" onclick="closeAddFriendBox()">Cancel</button>
+            </div>
+        </div>
     </div>
 
 </aside>
