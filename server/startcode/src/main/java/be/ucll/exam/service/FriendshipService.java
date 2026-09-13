@@ -35,17 +35,16 @@ public class FriendshipService {
     public List<String> userFriendsList(String user) {
         List<String> namesOfFriends = new ArrayList<>();
 
-        String cleanUser = user.strip().replaceAll("^\"|\"$", "");
-
         for (Friendship friendship : getAll()) {
-            String receiver = friendship.getReceiverUsername();
-            String sender = friendship.getSenderUsername();
 
-            if (sender != null && sender.equals(cleanUser)) {
-                namesOfFriends.add(receiver);
-            }
-            else if (receiver != null && receiver.equals(cleanUser)) {
-                namesOfFriends.add(sender);
+            if (friendship.getReceiverUsername() != null && friendship.getSenderUsername() != null) {
+
+                if (friendship.getSenderUsername().equals(user)) {
+                    namesOfFriends.add(friendship.getReceiverUsername());
+                }
+                else if (friendship.getReceiverUsername().equals(user)) {
+                    namesOfFriends.add(friendship.getSenderUsername());
+                }
             }
         }
 

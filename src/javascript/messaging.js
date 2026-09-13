@@ -150,7 +150,6 @@ async function displayMessage(message) {
     const messageDiv = document.createElement("div");
     messageDiv.classList.add("message");
 
-    // Right for sender, left for receiver
     if (message.senderUsername === currentUser) {
         messageDiv.classList.add("sent");
     } else {
@@ -160,7 +159,6 @@ async function displayMessage(message) {
     messageDiv.textContent = message.content;
     messagesContainer.appendChild(messageDiv);
 
-    // Auto-scroll to the newest message
     messagesContainer.scrollTop = messagesContainer.scrollHeight;
 }
 async function openAddFriendBox() {
@@ -175,13 +173,35 @@ async function openAddFriendBox() {
                 "Content-Type": "application/json"
             },
             body: JSON.stringify({
-                user: currentUser // Using the variable instead of hardcoding "taim"
+                user: currentUser
             })
         });
 
         const friendsList = await response.json();
-
         console.log(friendsList);
+
+        const container = document.getElementById('requests-list-container');
+
+        container.innerHTML = '';
+
+        friendsList.forEach(friendUsername => {
+            const initial = friendUsername.charAt(0).toUpperCase();
+
+            const itemHtml = `
+                <div class="request-item">
+                    <div class="request-info">
+                        <div class="req-avatar">${initial}</div>
+                        <div class="req-name">${friendUsername}</div>
+                    </div>
+                    <div class="request-actions">
+                        <button class="accept-btn" title="Accept" onclick="acceptFriend('${friendUsername}')">✓</button>
+                        <button class="decline-btn" title="Decline" onclick="declineFriend('${friendUsername}')">✗</button>
+                    </div>
+                </div>
+            `;
+
+            container.insertAdjacentHTML('beforeend', itemHtml);
+        });
 
     } catch (error) {
         console.error("Error fetching friends:", error);
@@ -192,24 +212,20 @@ function closeAddFriendBox() {
     document.getElementById('add-friend-box').style.display = 'none';
 }
 
-// Dummy function for the "Add" button next to the input box
 function addFriend() {
     const inputField = document.getElementById('friend-username');
     const username = inputField.value.trim();
 
     if (username !== "") {
-        // Here is where you will eventually send data to your Spring Boot backend
         console.log("Adding friend: " + username);
         alert("Friend request sent to " + username + "!");
 
-        // Clear the input field after sending
         inputField.value = "";
     } else {
         alert("Please enter a username first.");
     }
 }
 
-// Close modal if user clicks outside the white box
 window.onclick = function(event) {
     const modal = document.getElementById('add-friend-box');
     if (event.target === modal) {

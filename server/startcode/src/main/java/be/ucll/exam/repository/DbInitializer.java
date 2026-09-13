@@ -25,7 +25,7 @@ public class DbInitializer {
         User user1 = new User("a",  "john.doe@ucll.be", "12345678");
         User user2 = new User("taim",  "jane.toe@ucll.be", "jane1234");
         User user3 = new User("ayman",  "janeayman@ucll.be", "jane1234");
-        User user4 = new User("ayman-darodri",  "janeaymandardo@ucll.be", "jane1234");
+        User user4 = new User("sara",  "janeaymandardo@ucll.be", "jane1234");
 
 
 

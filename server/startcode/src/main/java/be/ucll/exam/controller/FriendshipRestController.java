@@ -41,8 +41,9 @@ public class FriendshipRestController {
         return friendshipService.showFriendReq(request.getUser1(), request.getUser2());
     }
 
+
     @PostMapping("/showonlyuserfriends")
-    public List<String> userFriendsList(@RequestBody Map<String, String> payload) {
+    public List<String> userFriendsList(@RequestBody Map<String, String> payload){
         String username = payload.get("user");
         return friendshipService.userFriendsList(username);
     }
