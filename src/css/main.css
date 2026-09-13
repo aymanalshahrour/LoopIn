@@ -1,4 +1,4 @@
-    /* Base Reset */
+/* Base Reset */
 * {
     margin: 0;
     padding: 0;
@@ -96,7 +96,7 @@ body {
     overflow: hidden;
 }
 
-/* Add Friend Section (Bottom of Sidebar) */
+/* Sidebar Button Wrapper */
 .add-friend-wrapper {
     padding: 16px 20px;
     background-color: #ffffff;
@@ -164,9 +164,10 @@ body {
 .message {
     max-width: 65%;
     padding: 12px 16px;
-    border-radius: 16px;
+    border-radius: 15px;
     font-size: 15px;
     line-height: 1.4;
+    word-wrap: break-word;
     box-shadow: 0 1px 2px rgba(0,0,0,0.1);
     position: relative;
 }
@@ -236,76 +237,180 @@ body {
 .send-btn:hover {
     background-color: #0056b3;
 }
-    .add-friend-overlay {
-        display: none;
-        position: fixed;
-        inset: 0;
-        background: rgba(0, 0, 0, 0.5);
 
-        justify-content: center;
-        align-items: center;
+/* 3. Modal / Overlay (Manage Requests) */
+.add-friend-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
 
-        z-index: 1000;
-    }
+.add-friend-modal {
+    width: 380px;
+    padding: 25px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
 
-    .add-friend-modal {
-        width: 350px;
-        padding: 25px;
+.add-friend-modal h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #333;
+}
 
-        background: white;
-        border-radius: 12px;
+/* Add User Input Group */
+.add-user-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
 
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
-    }
+#friend-username {
+    flex: 1;
+    box-sizing: border-box;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+}
 
-    .add-friend-modal h2 {
-        margin-top: 0;
-        margin-bottom: 20px;
-    }
+#friend-username:focus {
+    border-color: #007bff;
+}
 
-    #friend-username {
-        width: 100%;
-        box-sizing: border-box;
+.send-add-btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0 20px;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
 
-        padding: 12px;
-        border: 1px solid #ccc;
-        border-radius: 8px;
+.send-add-btn:hover {
+    background: #0056b3;
+}
 
-        font-size: 16px;
-        outline: none;
-    }
+.modal-divider {
+    border: 0;
+    height: 1px;
+    background: #e0e0e0;
+    margin: 15px 0;
+}
 
-    #friend-username:focus {
-        border-color: #007bff;
-    }
+/* Requests List */
+.requests-title {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 12px;
+}
 
-    .add-friend-buttons {
-        display: flex;
-        gap: 10px;
-        margin-top: 15px;
-    }
+.requests-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 180px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    padding-right: 5px;
+}
 
-    .add-friend-buttons button {
-        flex: 1;
-        padding: 10px;
+.request-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8f9fa;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #eee;
+}
 
-        border: none;
-        border-radius: 8px;
+.request-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 
-        cursor: pointer;
-        font-size: 15px;
-    }
+.req-avatar {
+    width: 32px;
+    height: 32px;
+    background-color: #20c997;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 14px;
+}
 
-    .add-friend-buttons button:first-child {
-        background: #007bff;
-        color: white;
-    }
+.req-name {
+    font-size: 15px;
+    font-weight: 500;
+    color: #333;
+}
 
-    .add-friend-buttons button:last-child {
-        background: #e5e5e5;
-        color: #333;
-    }
-    .chat-messages { display: flex; flex-direction: column; gap: 10px; padding: 20px; overflow-y: auto; }
-    .message { max-width: 65%; padding: 10px 14px; border-radius: 15px; word-wrap: break-word; }
-    .message.sent { align-self: flex-end; background-color: #007bff; color: white; border-bottom-right-radius: 4px; }
-    .message.received { align-self: flex-start; background-color: #e5e5e5; color: black; border-bottom-left-radius: 4px; }
+.request-actions {
+    display: flex;
+    gap: 6px;
+}
+
+.accept-btn, .decline-btn {
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accept-btn {
+    background-color: #28a745;
+}
+
+.accept-btn:hover {
+    background-color: #218838;
+}
+
+.decline-btn {
+    background-color: #dc3545;
+}
+
+.decline-btn:hover {
+    background-color: #c82333;
+}
+
+/* Modal Bottom Buttons */
+.add-friend-buttons {
+    display: flex;
+    margin-top: 15px;
+}
+
+.close-modal-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    background: #e5e5e5;
+    color: #333;
+    font-weight: bold;
+}
+
+.close-modal-btn:hover {
+    background: #d4d4d4;
+}

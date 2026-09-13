@@ -6,6 +6,8 @@ import org.springframework.stereotype.Component;
 import be.ucll.exam.model.User;
 import jakarta.annotation.PostConstruct;
 
+import java.util.ArrayList;
+
 @Component
 public class DbInitializer {
 
@@ -19,10 +21,15 @@ public class DbInitializer {
     @PostConstruct
     public void initialize() {
 
+
         User user1 = new User("a",  "john.doe@ucll.be", "12345678");
         User user2 = new User("taim",  "jane.toe@ucll.be", "jane1234");
         User user3 = new User("ayman",  "janeayman@ucll.be", "jane1234");
         User user4 = new User("ayman-darodri",  "janeaymandardo@ucll.be", "jane1234");
+
+
+
+
 
 
         userRepository.save(user1);

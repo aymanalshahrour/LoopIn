@@ -5,7 +5,6 @@ import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "Messages")
-
 public class Message {
 
 
@@ -35,17 +34,27 @@ public class Message {
 
     }
 
-    public Long getId() {return id;}
+    public Long getId() {
+        return id;
+    }
+
     public void setId(Long id){
+
         this.id = id;
     }
-    public String getSenderUsername(){return senderUsername;}
+
+    public String getSenderUsername(){
+        return senderUsername;
+    }
+
     public void setSenderUsername(String senderUsername){
         this.senderUsername = senderUsername;
     }
+
     public String getReceiverUsername(){
         return receiverUsername;
     }
+
     public void setReceiverUsername(String receiverUsername){
         this.receiverUsername = receiverUsername;
 

@@ -163,4 +163,35 @@ async function displayMessage(message) {
     // Auto-scroll to the newest message
     messagesContainer.scrollTop = messagesContainer.scrollHeight;
 }
+function openAddFriendBox() {
+    document.getElementById('add-friend-box').style.display = 'flex';
+}
 
+function closeAddFriendBox() {
+    document.getElementById('add-friend-box').style.display = 'none';
+}
+
+// Dummy function for the "Add" button next to the input box
+function addFriend() {
+    const inputField = document.getElementById('friend-username');
+    const username = inputField.value.trim();
+
+    if (username !== "") {
+        // Here is where you will eventually send data to your Spring Boot backend
+        console.log("Adding friend: " + username);
+        alert("Friend request sent to " + username + "!");
+
+        // Clear the input field after sending
+        inputField.value = "";
+    } else {
+        alert("Please enter a username first.");
+    }
+}
+
+// Close modal if user clicks outside the white box
+window.onclick = function(event) {
+    const modal = document.getElementById('add-friend-box');
+    if (event.target === modal) {
+        closeAddFriendBox();
+    }
+}

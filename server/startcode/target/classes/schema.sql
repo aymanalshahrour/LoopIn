@@ -1,5 +1,6 @@
 DROP TABLE IF EXISTS Messages;
 DROP TABLE IF EXISTS users;
+DROP TABLE IF EXISTS friendships;
 
 CREATE TABLE users
 (
@@ -16,4 +17,13 @@ CREATE TABLE Messages
     receiver_username VARCHAR(255),
     content           VARCHAR(255),
     timestamp         DATETIME
+);
+
+
+CREATE TABLE friendships
+(
+    id                BIGINT AUTO_INCREMENT PRIMARY KEY,
+    sender_username   VARCHAR(255),
+    receiver_username VARCHAR(255),
+    status            VARCHAR(255)
 );

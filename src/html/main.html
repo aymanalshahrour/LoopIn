@@ -4,10 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>1v1 Chat Messages</title>
     <link rel="stylesheet" href="../css/main.css">
-
 </head>
 
 <body>
@@ -24,30 +22,66 @@
     <!-- Contact List -->
     <!-- JavaScript will add all users here -->
     <div class="contact-list" id="contact-list">
-
         <!-- Contacts are created by messaging.js -->
-
     </div>
 
-    <!-- Add Friend Section -->
-    <button class="add-friend-btn" id="add-friend" type="button" onclick="openAddFriendBox()">
-        + Add Friend
-    </button>
+    <!-- View Requests / Add Friend Button -->
+    <div class="add-friend-wrapper">
+        <button class="add-friend-btn" id="view-requests" type="button" onclick="openAddFriendBox()">
+            View Requests
+        </button>
+    </div>
 
-    <!-- Add Friend Box -->
+    <!-- Manage Friends / Requests Box -->
     <div id="add-friend-box" class="add-friend-overlay">
         <div class="add-friend-modal">
-            <h2>Add Friend</h2>
+            <h2>Manage Friends</h2>
 
-            <input
-                    type="text"
-                    id="friend-username"
-                    placeholder="Enter username"
-            >
+            <!-- Add New Friend Section -->
+            <div class="add-user-group">
+                <input
+                        type="text"
+                        id="friend-username"
+                        placeholder="Enter username"
+                >
+                <button type="button" class="send-add-btn" onclick="addFriend()">Add</button>
+            </div>
 
+            <hr class="modal-divider">
+
+            <!-- Incoming Requests Section -->
+            <h3 class="requests-title">Friend Requests</h3>
+            <div class="requests-list">
+
+                <!-- Dummy Request 1 -->
+                <div class="request-item">
+                    <div class="request-info">
+                        <div class="req-avatar">D</div>
+                        <div class="req-name">DummyUser99</div>
+                    </div>
+                    <div class="request-actions">
+                        <button class="accept-btn" title="Accept">✓</button>
+                        <button class="decline-btn" title="Decline">✗</button>
+                    </div>
+                </div>
+
+                <!-- Dummy Request 2 -->
+                <div class="request-item">
+                    <div class="request-info">
+                        <div class="req-avatar" style="background-color: #e83e8c;">S</div>
+                        <div class="req-name">Sarah_Smith</div>
+                    </div>
+                    <div class="request-actions">
+                        <button class="accept-btn" title="Accept">✓</button>
+                        <button class="decline-btn" title="Decline">✗</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Close Modal -->
             <div class="add-friend-buttons">
-                <button type="button" onclick="addFriend()">Add</button>
-                <button type="button" onclick="closeAddFriendBox()">Cancel</button>
+                <button type="button" class="close-modal-btn" onclick="closeAddFriendBox()">Close</button>
             </div>
         </div>
     </div>
@@ -60,7 +94,6 @@
 
     <!-- Chat Header -->
     <header class="chat-header">
-
         <div
                 class="contact-avatar"
                 id="active-chat-avatar"
@@ -70,37 +103,27 @@
                     height: 42px;
                 ">
         </div>
-
         <div>
-
             <div
                     class="contact-name"
                     id="active-chat-name">
                 Select a chat
             </div>
-
             <div class="status" id="active-chat-status">
                 Select a user to start chatting
             </div>
-
         </div>
-
     </header>
 
 
     <!-- Messages Container -->
-    <div
-            class="chat-messages"
-            id="chat-messages">
-
+    <div class="chat-messages" id="chat-messages">
         <!-- Messages will be loaded here -->
-
     </div>
 
 
     <!-- Text Input -->
     <div class="chat-input-wrapper">
-
         <input
                 type="text"
                 id="message-input"
@@ -108,22 +131,18 @@
                 placeholder="Type a message..."
                 autocomplete="off"
         >
-
         <button
                 id="send-button"
                 class="send-btn"
                 onclick="sendMessage()">
             ➔
         </button>
-
     </div>
 
 </main>
-
 
 <!-- JavaScript -->
 <script src="../javascript/messaging.js" defer></script>
 
 </body>
-
 </html>
