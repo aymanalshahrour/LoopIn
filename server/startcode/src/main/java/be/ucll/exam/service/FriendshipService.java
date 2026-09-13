@@ -6,6 +6,7 @@ import be.ucll.exam.repository.FriendshipRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -29,5 +30,25 @@ public class FriendshipService {
 
     public List<Friendship> showFriendReq(String user1, String user2) {
         return friendshipRepository.findFriendshipBetweenUsers(user1,user2);
+    }
+
+    public List<String> userFriendsList(String user) {
+        List<String> namesOfFriends = new ArrayList<>();
+
+        String cleanUser = user.strip().replaceAll("^\"|\"$", "");
+
+        for (Friendship friendship : getAll()) {
+            String receiver = friendship.getReceiverUsername();
+            String sender = friendship.getSenderUsername();
+
+            if (sender != null && sender.equals(cleanUser)) {
+                namesOfFriends.add(receiver);
+            }
+            else if (receiver != null && receiver.equals(cleanUser)) {
+                namesOfFriends.add(sender);
+            }
+        }
+
+        return namesOfFriends;
     }
 }

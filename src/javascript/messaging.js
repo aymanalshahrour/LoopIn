@@ -163,8 +163,29 @@ async function displayMessage(message) {
     // Auto-scroll to the newest message
     messagesContainer.scrollTop = messagesContainer.scrollHeight;
 }
-function openAddFriendBox() {
+async function openAddFriendBox() {
+    const currentUser = localStorage.getItem('username');
     document.getElementById('add-friend-box').style.display = 'flex';
+    console.log("Current user:", currentUser);
+
+    try {
+        const response = await fetch("http://localhost:8080/friendship/showonlyuserfriends", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                user: currentUser // Using the variable instead of hardcoding "taim"
+            })
+        });
+
+        const friendsList = await response.json();
+
+        console.log(friendsList);
+
+    } catch (error) {
+        console.error("Error fetching friends:", error);
+    }
 }
 
 function closeAddFriendBox() {

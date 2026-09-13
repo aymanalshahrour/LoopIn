@@ -11,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/friendship")
@@ -38,5 +39,11 @@ public class FriendshipRestController {
     @PostMapping("/showfriendrequest")
     public List<Friendship> showFriendReq(@RequestBody ChatRequest request) {
         return friendshipService.showFriendReq(request.getUser1(), request.getUser2());
+    }
+
+    @PostMapping("/showonlyuserfriends")
+    public List<String> userFriendsList(@RequestBody Map<String, String> payload) {
+        String username = payload.get("user");
+        return friendshipService.userFriendsList(username);
     }
 }
