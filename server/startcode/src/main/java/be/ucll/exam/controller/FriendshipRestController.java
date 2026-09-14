@@ -7,6 +7,7 @@ import be.ucll.exam.model.Message;
 import be.ucll.exam.model.User;
 import be.ucll.exam.service.FriendshipService;
 import be.ucll.exam.service.MessageService;
+import be.ucll.exam.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -19,11 +20,13 @@ import java.util.Map;
 public class FriendshipRestController {
 
     private final FriendshipService friendshipService;
+    private final UserService userService;
 
 
     @Autowired
-    public FriendshipRestController(FriendshipService friendshipService) {
+    public FriendshipRestController(FriendshipService friendshipService, UserService userService) {
         this.friendshipService = friendshipService;
+        this.userService = userService;
     }
 
     @GetMapping
@@ -32,19 +35,21 @@ public class FriendshipRestController {
     }
 
     @PostMapping("/send")
-    public Friendship addFriend(@RequestBody Friendship friendship){
+    public Friendship addFriend(@RequestHeader(value = "Authorization", required = false) String authorizationHeader, @RequestBody Friendship friendship){
+        friendship.setSenderUsername(userService.getUsernameFromToken(authorizationHeader));
         return friendshipService.addFriend(friendship);
     }
 
     @PostMapping("/showfriendrequest")
-    public List<Friendship> showFriendReq(@RequestBody ChatRequest request) {
+    public List<Friendship> showFriendReq(@RequestHeader(value = "Authorization", required = false) String authorizationHeader, @RequestBody ChatRequest request) {
+        request.setUser1(userService.getUsernameFromToken(authorizationHeader));
         return friendshipService.showFriendReq(request.getUser1(), request.getUser2());
     }
 
 
     @PostMapping("/showonlyuserfriends")
-    public List<String> userFriendsList(@RequestBody Map<String, String> payload){
-        String username = payload.get("user");
+    public List<String> userFriendsList(@RequestHeader(value = "Authorization", required = false) String authorizationHeader, @RequestBody Map<String, String> payload){
+        String username = userService.getUsernameFromToken(authorizationHeader);
         return friendshipService.userFriendsList(username);
     }
 }

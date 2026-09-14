@@ -25,7 +25,7 @@ public class UserRestController {
 
 //  users/user/{USERname}/{pass}/test
     @GetMapping("/user/{username}/{password}")
-    public boolean findUserAndValidatedUserPassword(@PathVariable String username,@PathVariable String password){
+    public UserService.LoginResponse findUserAndValidatedUserPassword(@PathVariable String username,@PathVariable String password){
         return userService.findUserAndValidatedUserPassword(username, password);
     }
 

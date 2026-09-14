@@ -17,17 +17,23 @@ async function loginfunction(event){
         );
 
         if (!response.ok) {
+            if (response.status === 401) {
+                errorMessage.textContent = "Username/email or password is incorrect.";
+                return;
+            }
             throw new Error(`Login request failed with status ${response.status}`);
         }
 
-        const isValidUser = await response.json();
+        const session = await response.json();
 
-        if (isValidUser) {
-            localStorage.setItem("username", usernameOrEmail);
+        if (session.token) {
+            localStorage.setItem("sessionToken", session.token);
+            localStorage.setItem("username", session.username);
+            localStorage.setItem("sessionExpiresAt", session.expiresAt);
         }
 
-        if (isValidUser === true) {
-            window.location.assign("http://localhost:63343/src/html/main.html");
+        if (session.token) {
+            window.location.assign("main.html");
             return;
         }
 

@@ -52,6 +52,7 @@ async function sendMessage() {
     const messageValue = messageInput.value.trim();
     const sendToUser = document.getElementById("active-chat-name").textContent.trim();
     const sender = localStorage.getItem('username');
+    const sessionToken = localStorage.getItem("sessionToken");
 
     // Prevent sending blank messages or sending without selecting a chat
     if (!messageValue || sendToUser === "Select a chat") {
@@ -78,7 +79,8 @@ async function sendMessage() {
         const sendResponse = await fetch("http://localhost:8080/messages/send", {
             method: "POST",
             headers: {
-                "Content-Type": "application/json"
+                "Content-Type": "application/json",
+                "Authorization": `Bearer ${sessionToken}`
             },
             body: JSON.stringify(message)
         });
@@ -103,6 +105,7 @@ loadContacts();
 async function openChat(username) {
     console.log("Opening chat with:", username);
     const currentUser = localStorage.getItem('username');
+    const sessionToken = localStorage.getItem("sessionToken");
 
     // Save who we are chatting with
     localStorage.setItem("activeChat", username);
@@ -119,7 +122,8 @@ async function openChat(username) {
         const response = await fetch("http://localhost:8080/messages/messageuserandreciver", {
             method: "POST",
             headers: {
-                "Content-Type": "application/json"
+                "Content-Type": "application/json",
+                "Authorization": `Bearer ${sessionToken}`
             },
             body: JSON.stringify({
                 user1: currentUser,
@@ -163,6 +167,7 @@ async function displayMessage(message) {
 }
 async function openAddFriendBox() {
     const currentUser = localStorage.getItem('username');
+    const sessionToken = localStorage.getItem("sessionToken");
     document.getElementById('add-friend-box').style.display = 'flex';
     console.log("Current user:", currentUser);
 
@@ -170,7 +175,8 @@ async function openAddFriendBox() {
         const response = await fetch("http://localhost:8080/friendship/showonlyuserfriends", {
             method: "POST",
             headers: {
-                "Content-Type": "application/json"
+                "Content-Type": "application/json",
+                "Authorization": `Bearer ${sessionToken}`
             },
             body: JSON.stringify({
                 user: currentUser
