@@ -1,11 +1,10 @@
 package be.ucll.exam.controller;
 
+import be.ucll.exam.model.LoginRequest;
 import be.ucll.exam.service.UserService;
 import be.ucll.exam.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @RestController
 @RequestMapping("/users")
@@ -18,15 +17,12 @@ public class UserRestController {
         this.userService = userService;
     }
 
-    @GetMapping
-    public List<User> getAllUsers() {
-        return userService.getAllUsers();
-    }
-
-//  users/user/{USERname}/{pass}/test
-    @GetMapping("/user/{username}/{password}")
-    public UserService.LoginResponse findUserAndValidatedUserPassword(@PathVariable String username,@PathVariable String password){
-        return userService.findUserAndValidatedUserPassword(username, password);
+    @PostMapping("/login")
+    public UserService.LoginResponse findUserAndValidatedUserPassword(@RequestBody LoginRequest loginRequest){
+        return userService.findUserAndValidatedUserPassword(
+                loginRequest.getUsernameOrEmail(),
+                loginRequest.getPassword()
+        );
     }
 
     @PostMapping("/adduser")

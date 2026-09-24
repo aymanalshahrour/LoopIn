@@ -13,11 +13,16 @@ async function loginfunction(event){
     }
 
     try {
-        const loginUsername = await getLoginUsername(usernameOrEmail);
-
-        const response = await fetch(
-            `http://localhost:8080/users/user/${(loginUsername)}/${(password)}`
-        );
+        const response = await fetch("http://localhost:8080/users/login", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                usernameOrEmail: usernameOrEmail,
+                password: password
+            })
+        });
 
         if (!response.ok) {
             if (response.status === 401) {
@@ -60,23 +65,6 @@ function setCookie(name, value, expiresAt) {
     }
 
     document.cookie = cookie;
-}
-
-async function getLoginUsername(usernameOrEmail) {
-    if (!usernameOrEmail.includes("@")) {
-        return usernameOrEmail;
-    }
-
-    const response = await fetch("http://localhost:8080/users");
-
-    if (!response.ok) {
-        throw new Error(`Users request failed with status ${response.status}`);
-    }
-
-    const users = await response.json();
-    const matchingUser = users.find((user) => user.email === usernameOrEmail);
-
-    return matchingUser ? matchingUser.username : usernameOrEmail;
 }
 
 document

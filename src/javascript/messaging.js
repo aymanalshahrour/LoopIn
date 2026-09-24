@@ -66,16 +66,6 @@ async function sendMessage() {
     }
 
     try {
-        const response = await fetch("http://localhost:8080/users");
-        const users = await response.json();
-        const validSender = users.find((user) => user.username === sender);
-        const validReceiver = users.find((user) => user.username === sendToUser);
-
-        if (!validSender || !validReceiver) {
-            console.error("Invalid Sender/Receiver !");
-            return;
-        }
-
         const message = {
             senderUsername: sender,
             receiverUsername: sendToUser,
