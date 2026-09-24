@@ -1,0 +1,5 @@
+be\ucll\exam\model\RealtimeMessage.class
+be\ucll\exam\service\RealtimeService.class
+be\ucll\exam\config\WebSocketConfig.class
+be\ucll\exam\model\FriendRequestUpdate.class
+be\ucll\exam\websocket\RealtimeWebSocketHandler.class

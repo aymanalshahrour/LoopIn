@@ -5,6 +5,9 @@ async function loginfunction(event){
     const password = document.getElementById("password").value;
     const errorMessage = document.getElementById("login-error");
 
+
+
+
     if (errorMessage) {
         errorMessage.textContent = "";
     }
@@ -27,7 +30,8 @@ async function loginfunction(event){
         const session = await response.json();
 
         if (session.token) {
-            localStorage.setItem("sessionToken", session.token);
+            setCookie("sessionToken", session.token, session.expiresAt);
+            localStorage.removeItem("sessionToken");
             localStorage.setItem("username", session.username);
             localStorage.setItem("sessionExpiresAt", session.expiresAt);
         }
@@ -48,6 +52,16 @@ async function loginfunction(event){
     }
 }
 
+function setCookie(name, value, expiresAt) {
+    let cookie = `${name}=${encodeURIComponent(value)}; path=/; SameSite=Lax`;
+
+    if (expiresAt) {
+        cookie += `; expires=${new Date(expiresAt).toUTCString()}`;
+    }
+
+    document.cookie = cookie;
+}
+
 async function getLoginUsername(usernameOrEmail) {
     if (!usernameOrEmail.includes("@")) {
         return usernameOrEmail;
@@ -65,8 +79,6 @@ async function getLoginUsername(usernameOrEmail) {
     return matchingUser ? matchingUser.username : usernameOrEmail;
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-    document
-        .getElementById("login-form")
-        .addEventListener("submit", loginfunction);
-});
+document
+    .getElementById("login-form")
+    .addEventListener("submit", loginfunction);
