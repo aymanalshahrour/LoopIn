@@ -14,7 +14,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/friendship")
-@CrossOrigin(origins = "http://localhost:63343")
+@CrossOrigin(origins = "*")
 public class FriendshipRestController {
 
     private final FriendshipService friendshipService;

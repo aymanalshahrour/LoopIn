@@ -1,412 +1,0 @@
-[INFO] Scanning for projects...
-Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/build-helper-maven-plugin/3.6.0/build-helper-maven-plugin-3.6.0.pom
-Progress (1): 1.0 kBProgress (1): 2.7 kBProgress (1): 6.0 kBProgress (1): 8.1 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/build-helper-maven-plugin/3.6.0/build-helper-maven-plugin-3.6.0.pom (8.1 kB at 22 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/mojo-parent/82/mojo-parent-82.pom
-Progress (1): 715 BProgress (1): 1.7 kBProgress (1): 5.2 kBProgress (1): 7.2 kBProgress (1): 8.8 kBProgress (1): 11 kB Progress (1): 14 kBProgress (1): 19 kBProgress (1): 24 kBProgress (1): 27 kBProgress (1): 28 kBProgress (1): 31 kBProgress (1): 36 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/mojo-parent/82/mojo-parent-82.pom (36 kB at 359 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/build-helper-maven-plugin/3.6.0/build-helper-maven-plugin-3.6.0.jar
-Progress (1): 0.9/72 kBProgress (1): 2.3/72 kBProgress (1): 3.6/72 kBProgress (1): 5.0/72 kBProgress (1): 6.4/72 kBProgress (1): 7.7/72 kBProgress (1): 9.1/72 kBProgress (1): 10/72 kB Progress (1): 12/72 kBProgress (1): 12/72 kBProgress (1): 14/72 kBProgress (1): 15/72 kBProgress (1): 16/72 kBProgress (1): 18/72 kBProgress (1): 19/72 kBProgress (1): 21/72 kBProgress (1): 22/72 kBProgress (1): 23/72 kBProgress (1): 25/72 kBProgress (1): 26/72 kBProgress (1): 27/72 kBProgress (1): 29/72 kBProgress (1): 30/72 kBProgress (1): 31/72 kBProgress (1): 33/72 kBProgress (1): 34/72 kBProgress (1): 36/72 kBProgress (1): 37/72 kBProgress (1): 38/72 kBProgress (1): 40/72 kBProgress (1): 41/72 kBProgress (1): 42/72 kBProgress (1): 47/72 kBProgress (1): 51/72 kBProgress (1): 55/72 kBProgress (1): 59/72 kBProgress (1): 64/72 kBProgress (1): 68/72 kBProgress (1): 72 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/build-helper-maven-plugin/3.6.0/build-helper-maven-plugin-3.6.0.jar (72 kB at 1.2 MB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/cyclonedx/cyclonedx-maven-plugin/2.9.1/cyclonedx-maven-plugin-2.9.1.pom
-Progress (1): 708 BProgress (1): 2.2 kBProgress (1): 4.5 kBProgress (1): 8.7 kBProgress (1): 12 kB Progress (1): 17 kBProgress (1): 19 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/cyclonedx/cyclonedx-maven-plugin/2.9.1/cyclonedx-maven-plugin-2.9.1.pom (19 kB at 257 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/cyclonedx/cyclonedx-maven-plugin/2.9.1/cyclonedx-maven-plugin-2.9.1.jar
-Progress (1): 3.8/52 kBProgress (1): 8.0/52 kBProgress (1): 12/52 kB Progress (1): 16/52 kBProgress (1): 21/52 kBProgress (1): 25/52 kBProgress (1): 29/52 kBProgress (1): 33/52 kBProgress (1): 37/52 kBProgress (1): 41/52 kBProgress (1): 46/52 kBProgress (1): 50/52 kBProgress (1): 52 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/cyclonedx/cyclonedx-maven-plugin/2.9.1/cyclonedx-maven-plugin-2.9.1.jar (52 kB at 1.5 MB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/flywaydb/flyway-maven-plugin/10.20.1/flyway-maven-plugin-10.20.1.pom
-Progress (1): 2.1 kBProgress (1): 3.8 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/flywaydb/flyway-maven-plugin/10.20.1/flyway-maven-plugin-10.20.1.pom (3.8 kB at 58 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/flywaydb/flyway-parent/10.20.1/flyway-parent-10.20.1.pom
-Progress (1): 967 BProgress (1): 3.3 kBProgress (1): 5.1 kBProgress (1): 8.2 kBProgress (1): 17 kB Progress (1): 22 kBProgress (1): 27 kBProgress (1): 30 kBProgress (1): 31 kBProgress (1): 36 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/flywaydb/flyway-parent/10.20.1/flyway-parent-10.20.1.pom (36 kB at 867 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/flywaydb/flyway-maven-plugin/10.20.1/flyway-maven-plugin-10.20.1.jar
-Progress (1): 3.8/110 kBProgress (1): 8.0/110 kBProgress (1): 12/110 kB Progress (1): 16/110 kBProgress (1): 21/110 kBProgress (1): 25/110 kBProgress (1): 29/110 kBProgress (1): 33/110 kBProgress (1): 37/110 kBProgress (1): 41/110 kBProgress (1): 45/110 kBProgress (1): 49/110 kBProgress (1): 57/110 kBProgress (1): 74/110 kBProgress (1): 90/110 kBProgress (1): 106/110 kBProgress (1): 110 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/flywaydb/flyway-maven-plugin/10.20.1/flyway-maven-plugin-10.20.1.jar (110 kB at 2.2 MB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/io/github/git-commit-id/git-commit-id-maven-plugin/9.0.1/git-commit-id-maven-plugin-9.0.1.pom
-Progress (1): 962 BProgress (1): 2.7 kBProgress (1): 8.0 kBProgress (1): 11 kB Progress (1): 15 kBProgress (1): 18 kBProgress (1): 22 kBProgress (1): 26 kBProgress (1): 28 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/io/github/git-commit-id/git-commit-id-maven-plugin/9.0.1/git-commit-id-maven-plugin-9.0.1.pom (28 kB at 529 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/io/github/git-commit-id/git-commit-id-maven-plugin/9.0.1/git-commit-id-maven-plugin-9.0.1.jar
-Progress (1): 8.2/55 kBProgress (1): 25/55 kB Progress (1): 41/55 kBProgress (1): 55 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/io/github/git-commit-id/git-commit-id-maven-plugin/9.0.1/git-commit-id-maven-plugin-9.0.1.jar (55 kB at 1.3 MB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/jooq/jooq-codegen-maven/3.19.16/jooq-codegen-maven-3.19.16.pom
-Progress (1): 1.2 kBProgress (1): 3.8 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/jooq/jooq-codegen-maven/3.19.16/jooq-codegen-maven-3.19.16.pom (3.8 kB at 82 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/jooq/jooq-parent/3.19.16/jooq-parent-3.19.16.pom
-Progress (1): 912 BProgress (1): 2.3 kBProgress (1): 4.3 kBProgress (1): 10 kB Progress (1): 17 kBProgress (1): 21 kBProgress (1): 23 kBProgress (1): 29 kBProgress (1): 33 kBProgress (1): 37 kBProgress (1): 40 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/jooq/jooq-parent/3.19.16/jooq-parent-3.19.16.pom (40 kB at 989 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/jooq/jooq-codegen-maven/3.19.16/jooq-codegen-maven-3.19.16.jar
-Progress (1): 7.7/17 kBProgress (1): 8.2/17 kBProgress (1): 17 kB                       Downloaded from central: https://repo.maven.apache.org/maven2/org/jooq/jooq-codegen-maven/3.19.16/jooq-codegen-maven-3.19.16.jar (17 kB at 456 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-maven-plugin/1.9.25/kotlin-maven-plugin-1.9.25.pom
-Progress (1): 2.0 kBProgress (1): 4.9 kBProgress (1): 6.7 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-maven-plugin/1.9.25/kotlin-maven-plugin-1.9.25.pom (6.7 kB at 159 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-project/1.9.25/kotlin-project-1.9.25.pom
-Progress (1): 963 BProgress (1): 2.9 kBProgress (1): 6.4 kBProgress (1): 11 kB Progress (1): 16 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-project/1.9.25/kotlin-project-1.9.25.pom (16 kB at 401 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-maven-plugin/1.9.25/kotlin-maven-plugin-1.9.25.jar
-Progress (1): 7.7/82 kBProgress (1): 8.2/82 kBProgress (1): 25/82 kB Progress (1): 41/82 kBProgress (1): 49/82 kBProgress (1): 66/82 kBProgress (1): 82 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-maven-plugin/1.9.25/kotlin-maven-plugin-1.9.25.jar (82 kB at 2.0 MB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/liquibase/liquibase-maven-plugin/4.29.2/liquibase-maven-plugin-4.29.2.pom
-Progress (1): 1.3 kBProgress (1): 2.0 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/liquibase/liquibase-maven-plugin/4.29.2/liquibase-maven-plugin-4.29.2.pom (2.0 kB at 49 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/liquibase/liquibase-maven-plugin/4.29.2/liquibase-maven-plugin-4.29.2.jar
-Progress (1): 7.7/310 kBProgress (1): 12/310 kB Progress (1): 29/310 kBProgress (1): 45/310 kBProgress (1): 61/310 kBProgress (1): 78/310 kBProgress (1): 94/310 kBProgress (1): 111/310 kBProgress (1): 127/310 kBProgress (1): 143/310 kBProgress (1): 160/310 kBProgress (1): 176/310 kBProgress (1): 193/310 kBProgress (1): 197/310 kBProgress (1): 213/310 kBProgress (1): 229/310 kBProgress (1): 246/310 kBProgress (1): 262/310 kBProgress (1): 279/310 kBProgress (1): 295/310 kBProgress (1): 310 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/liquibase/liquibase-maven-plugin/4.29.2/liquibase-maven-plugin-4.29.2.jar (310 kB at 5.1 MB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-antrun-plugin/3.1.0/maven-antrun-plugin-3.1.0.pom
-Progress (1): 759 BProgress (1): 2.2 kBProgress (1): 5.0 kBProgress (1): 8.3 kBProgress (1): 9.1 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-antrun-plugin/3.1.0/maven-antrun-plugin-3.1.0.pom (9.1 kB at 212 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/34/maven-plugins-34.pom
-Progress (1): 757 BProgress (1): 2.3 kBProgress (1): 4.7 kBProgress (1): 7.6 kBProgress (1): 9.9 kBProgress (1): 11 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/34/maven-plugins-34.pom (11 kB at 289 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-antrun-plugin/3.1.0/maven-antrun-plugin-3.1.0.jar
-Progress (1): 3.2/41 kBProgress (1): 20/41 kB Progress (1): 28/41 kBProgress (1): 41 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-antrun-plugin/3.1.0/maven-antrun-plugin-3.1.0.jar (41 kB at 877 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-assembly-plugin/3.7.1/maven-assembly-plugin-3.7.1.pom
-Progress (1): 744 BProgress (1): 2.1 kBProgress (1): 4.8 kBProgress (1): 8.3 kBProgress (1): 10 kB Progress (1): 14 kBProgress (1): 15 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-assembly-plugin/3.7.1/maven-assembly-plugin-3.7.1.pom (15 kB at 354 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-assembly-plugin/3.7.1/maven-assembly-plugin-3.7.1.jar
-Progress (1): 8.2/240 kBProgress (1): 16/240 kB Progress (1): 33/240 kBProgress (1): 41/240 kBProgress (1): 57/240 kBProgress (1): 74/240 kBProgress (1): 90/240 kBProgress (1): 106/240 kBProgress (1): 123/240 kBProgress (1): 131/240 kBProgress (1): 147/240 kBProgress (1): 164/240 kBProgress (1): 180/240 kBProgress (1): 188/240 kBProgress (1): 205/240 kBProgress (1): 221/240 kBProgress (1): 238/240 kBProgress (1): 240 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-assembly-plugin/3.7.1/maven-assembly-plugin-3.7.1.jar (240 kB at 5.1 MB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-dependency-plugin/3.8.1/maven-dependency-plugin-3.8.1.pom
-Progress (1): 747 BProgress (1): 2.3 kBProgress (1): 5.1 kBProgress (1): 9.4 kBProgress (1): 14 kB Progress (1): 16 kBProgress (1): 18 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-dependency-plugin/3.8.1/maven-dependency-plugin-3.8.1.pom (18 kB at 486 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-dependency-plugin/3.8.1/maven-dependency-plugin-3.8.1.jar
-Progress (1): 3.2/208 kBProgress (1): 11/208 kB Progress (1): 28/208 kBProgress (1): 44/208 kBProgress (1): 61/208 kBProgress (1): 77/208 kBProgress (1): 93/208 kBProgress (1): 110/208 kBProgress (1): 126/208 kBProgress (1): 134/208 kBProgress (1): 151/208 kBProgress (1): 159/208 kBProgress (1): 175/208 kBProgress (1): 192/208 kBProgress (1): 208 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-dependency-plugin/3.8.1/maven-dependency-plugin-3.8.1.jar (208 kB at 6.1 MB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-release-plugin/3.0.1/maven-release-plugin-3.0.1.pom
-Progress (1): 806 BProgress (1): 3.6 kBProgress (1): 6.6 kBProgress (1): 9.2 kBProgress (1): 9.8 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-release-plugin/3.0.1/maven-release-plugin-3.0.1.pom (9.8 kB at 273 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/release/maven-release/3.0.1/maven-release-3.0.1.pom
-Progress (1): 805 BProgress (1): 2.5 kBProgress (1): 4.2 kBProgress (1): 11 kB Progress (1): 11 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/release/maven-release/3.0.1/maven-release-3.0.1.pom (11 kB at 311 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-release-plugin/3.0.1/maven-release-plugin-3.0.1.jar
-Progress (1): 7.7/61 kBProgress (1): 8.2/61 kBProgress (1): 25/61 kB Progress (1): 41/61 kBProgress (1): 57/61 kBProgress (1): 61 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-release-plugin/3.0.1/maven-release-plugin-3.0.1.jar (61 kB at 1.8 MB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-enforcer-plugin/3.5.0/maven-enforcer-plugin-3.5.0.pom
-Progress (1): 810 BProgress (1): 3.5 kBProgress (1): 5.4 kBProgress (1): 8.1 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-enforcer-plugin/3.5.0/maven-enforcer-plugin-3.5.0.pom (8.1 kB at 151 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/enforcer/enforcer/3.5.0/enforcer-3.5.0.pom
-Progress (1): 807 BProgress (1): 2.3 kBProgress (1): 4.4 kBProgress (1): 9.0 kBProgress (1): 9.3 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/enforcer/enforcer/3.5.0/enforcer-3.5.0.pom (9.3 kB at 220 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-enforcer-plugin/3.5.0/maven-enforcer-plugin-3.5.0.jar
-Progress (1): 7.7/39 kBProgress (1): 8.2/39 kBProgress (1): 25/39 kB Progress (1): 39 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-enforcer-plugin/3.5.0/maven-enforcer-plugin-3.5.0.jar (39 kB at 1.0 MB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-failsafe-plugin/3.5.2/maven-failsafe-plugin-3.5.2.pom
-Progress (1): 812 BProgress (1): 3.2 kBProgress (1): 6.1 kBProgress (1): 9.9 kBProgress (1): 11 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-failsafe-plugin/3.5.2/maven-failsafe-plugin-3.5.2.pom (11 kB at 247 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-failsafe-plugin/3.5.2/maven-failsafe-plugin-3.5.2.jar
-Progress (1): 7.7/57 kBProgress (1): 8.2/57 kBProgress (1): 25/57 kB Progress (1): 41/57 kBProgress (1): 57 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-failsafe-plugin/3.5.2/maven-failsafe-plugin-3.5.2.jar (57 kB at 1.2 MB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-help-plugin/3.5.1/maven-help-plugin-3.5.1.pom
-Progress (1): 780 BProgress (1): 2.0 kBProgress (1): 5.0 kBProgress (1): 9.1 kBProgress (1): 10 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-help-plugin/3.5.1/maven-help-plugin-3.5.1.pom (10 kB at 236 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-help-plugin/3.5.1/maven-help-plugin-3.5.1.jar
-Progress (1): 7.7/65 kBProgress (1): 8.2/65 kBProgress (1): 25/65 kB Progress (1): 41/65 kBProgress (1): 57/65 kBProgress (1): 65 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-help-plugin/3.5.1/maven-help-plugin-3.5.1.jar (65 kB at 1.8 MB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-invoker-plugin/3.8.1/maven-invoker-plugin-3.8.1.pom
-Progress (1): 748 BProgress (1): 2.1 kBProgress (1): 4.3 kBProgress (1): 9.9 kBProgress (1): 13 kB Progress (1): 15 kBProgress (1): 16 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-invoker-plugin/3.8.1/maven-invoker-plugin-3.8.1.pom (16 kB at 306 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/groovy/groovy-bom/4.0.23/groovy-bom-4.0.23.pom
-Progress (1): 863 BProgress (1): 3.6 kBProgress (1): 7.0 kBProgress (1): 11 kB Progress (1): 14 kBProgress (1): 18 kBProgress (1): 22 kBProgress (1): 27 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/groovy/groovy-bom/4.0.23/groovy-bom-4.0.23.pom (27 kB at 665 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-invoker-plugin/3.8.1/maven-invoker-plugin-3.8.1.jar
-Progress (1): 7.7/139 kBProgress (1): 16/139 kB Progress (1): 16/139 kBProgress (1): 25/139 kBProgress (1): 41/139 kBProgress (1): 57/139 kBProgress (1): 66/139 kBProgress (1): 82/139 kBProgress (1): 98/139 kBProgress (1): 115/139 kBProgress (1): 123/139 kBProgress (1): 139/139 kBProgress (1): 139 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-invoker-plugin/3.8.1/maven-invoker-plugin-3.8.1.jar (139 kB at 2.4 MB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-javadoc-plugin/3.10.1/maven-javadoc-plugin-3.10.1.pom
-Progress (1): 735 BProgress (1): 2.5 kBProgress (1): 4.2 kBProgress (1): 8.2 kBProgress (1): 13 kB Progress (1): 16 kBProgress (1): 18 kBProgress (1): 22 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-javadoc-plugin/3.10.1/maven-javadoc-plugin-3.10.1.pom (22 kB at 423 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-javadoc-plugin/3.10.1/maven-javadoc-plugin-3.10.1.jar
-Progress (1): 7.7/517 kBProgress (1): 16/517 kB Progress (1): 32/517 kBProgress (1): 33/517 kBProgress (1): 49/517 kBProgress (1): 54/517 kBProgress (1): 66/517 kBProgress (1): 82/517 kBProgress (1): 90/517 kBProgress (1): 106/517 kBProgress (1): 123/517 kBProgress (1): 131/517 kBProgress (1): 147/517 kBProgress (1): 164/517 kBProgress (1): 180/517 kBProgress (1): 197/517 kBProgress (1): 213/517 kBProgress (1): 229/517 kBProgress (1): 238/517 kBProgress (1): 254/517 kBProgress (1): 270/517 kBProgress (1): 287/517 kBProgress (1): 295/517 kBProgress (1): 311/517 kBProgress (1): 328/517 kBProgress (1): 344/517 kBProgress (1): 360/517 kBProgress (1): 377/517 kBProgress (1): 393/517 kBProgress (1): 410/517 kBProgress (1): 426/517 kBProgress (1): 442/517 kBProgress (1): 459/517 kBProgress (1): 475/517 kBProgress (1): 492/517 kBProgress (1): 508/517 kBProgress (1): 517 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-javadoc-plugin/3.10.1/maven-javadoc-plugin-3.10.1.jar (517 kB at 6.8 MB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-shade-plugin/3.6.0/maven-shade-plugin-3.6.0.jar
-Progress (1): 7.7/150 kBProgress (1): 8.2/150 kBProgress (1): 25/150 kB Progress (1): 41/150 kBProgress (1): 57/150 kBProgress (1): 74/150 kBProgress (1): 90/150 kBProgress (1): 106/150 kBProgress (1): 123/150 kBProgress (1): 139/150 kBProgress (1): 150 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-shade-plugin/3.6.0/maven-shade-plugin-3.6.0.jar (150 kB at 4.2 MB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-source-plugin/3.3.1/maven-source-plugin-3.3.1.pom
-Progress (1): 773 BProgress (1): 2.3 kBProgress (1): 5.4 kBProgress (1): 6.7 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-source-plugin/3.3.1/maven-source-plugin-3.3.1.pom (6.7 kB at 187 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-source-plugin/3.3.1/maven-source-plugin-3.3.1.jar
-Progress (1): 8.2/32 kBProgress (1): 25/32 kB Progress (1): 32 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-source-plugin/3.3.1/maven-source-plugin-3.3.1.jar (32 kB at 920 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-war-plugin/3.4.0/maven-war-plugin-3.4.0.pom
-Progress (1): 794 BProgress (1): 2.3 kBProgress (1): 5.6 kBProgress (1): 8.3 kBProgress (1): 8.4 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-war-plugin/3.4.0/maven-war-plugin-3.4.0.pom (8.4 kB at 262 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-war-plugin/3.4.0/maven-war-plugin-3.4.0.jar
-Progress (1): 7.7/83 kBProgress (1): 11/83 kB Progress (1): 28/83 kBProgress (1): 44/83 kBProgress (1): 61/83 kBProgress (1): 77/83 kBProgress (1): 83 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-war-plugin/3.4.0/maven-war-plugin-3.4.0.jar (83 kB at 1.6 MB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/graalvm/buildtools/native-maven-plugin/0.10.4/native-maven-plugin-0.10.4.pom
-Progress (1): 934 BProgress (1): 3.1 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/graalvm/buildtools/native-maven-plugin/0.10.4/native-maven-plugin-0.10.4.pom (3.1 kB at 78 kB/s)
-Downloading from central: https://repo.maven.apache.org/maven2/org/graalvm/buildtools/native-maven-plugin/0.10.4/native-maven-plugin-0.10.4.jar
-Progress (1): 7.7/112 kBProgress (1): 7.7/112 kBProgress (1): 24/112 kB Progress (1): 40/112 kBProgress (1): 57/112 kBProgress (1): 66/112 kBProgress (1): 82/112 kBProgress (1): 90/112 kBProgress (1): 106/112 kBProgress (1): 112 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/graalvm/buildtools/native-maven-plugin/0.10.4/native-maven-plugin-0.10.4.jar (112 kB at 3.0 MB/s)
-[INFO] 
-[INFO] ----------------------------< be.ucll:exam >----------------------------
-[INFO] Building exam 1.0-SNAPSHOT
-[INFO]   from pom.xml
-[INFO] --------------------------------[ jar ]---------------------------------
-[INFO] 
-[INFO] >>> spring-boot:3.4.1:run (default-cli) > test-compile @ exam >>>
-[INFO] 
-[INFO] --- resources:3.3.1:resources (default-resources) @ exam ---
-[INFO] Copying 1 resource from src\main\resources to target\classes
-[INFO] Copying 1 resource from src\main\resources to target\classes
-[INFO] 
-[INFO] --- compiler:3.13.0:compile (default-compile) @ exam ---
-[INFO] Nothing to compile - all classes are up to date.
-[INFO] 
-[INFO] --- resources:3.3.1:testResources (default-testResources) @ exam ---
-[INFO] skip non existing resourceDirectory C:\Users\alsha\Desktop\taim-me-projects\LoopIn\server\startcode\src\test\resources
-[INFO] 
-[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ exam ---
-[INFO] Nothing to compile - all classes are up to date.
-[INFO] 
-[INFO] <<< spring-boot:3.4.1:run (default-cli) < test-compile @ exam <<<
-[INFO] 
-[INFO] 
-[INFO] --- spring-boot:3.4.1:run (default-cli) @ exam ---
-[INFO] Attaching agents: []
-
-  .   ____          _            __ _ _
- /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
-( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
- \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
-  '  |____| .__|_| |_|_| |_\__, | / / / /
- =========|_|==============|___/=/_/_/_/
-
- :: Spring Boot ::                (v3.4.1)
-
-2026-09-24T01:51:47.831+02:00  INFO 23044 --- [  restartedMain] be.ucll.exam.Application                 : Starting Application using Java 21.0.10 with PID 23044 (C:\Users\alsha\Desktop\taim-me-projects\LoopIn\server\startcode\target\classes started by alsha in C:\Users\alsha\Desktop\taim-me-projects\LoopIn\server\startcode)
-2026-09-24T01:51:47.831+02:00  INFO 23044 --- [  restartedMain] be.ucll.exam.Application                 : No active profile set, falling back to 1 default profile: "default"
-2026-09-24T01:51:47.896+02:00  INFO 23044 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2026-09-24T01:51:47.896+02:00  INFO 23044 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2026-09-24T01:51:48.828+02:00  INFO 23044 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-09-24T01:51:48.933+02:00  INFO 23044 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 91 ms. Found 3 JPA repository interfaces.
-2026-09-24T01:51:49.800+02:00  INFO 23044 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2026-09-24T01:51:49.823+02:00  INFO 23044 --- [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-09-24T01:51:49.823+02:00  INFO 23044 --- [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
-2026-09-24T01:51:49.901+02:00  INFO 23044 --- [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2026-09-24T01:51:49.901+02:00  INFO 23044 --- [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2005 ms
-2026-09-24T01:51:50.010+02:00  INFO 23044 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-09-24T01:51:50.303+02:00  INFO 23044 --- [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:exam user=OWNER
-2026-09-24T01:51:50.307+02:00  INFO 23044 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-09-24T01:51:50.451+02:00  INFO 23044 --- [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-09-24T01:51:50.562+02:00  INFO 23044 --- [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
-2026-09-24T01:51:50.623+02:00  INFO 23044 --- [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2026-09-24T01:51:51.053+02:00  INFO 23044 --- [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-09-24T01:51:51.152+02:00  WARN 23044 --- [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-09-24T01:51:51.186+02:00  INFO 23044 --- [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 2.3.232
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-09-24T01:51:52.556+02:00  INFO 23044 --- [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-09-24T01:51:52.556+02:00  INFO 23044 --- [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-09-24T01:51:53.027+02:00  INFO 23044 --- [  restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-Hibernate: insert into users (email,password,username,id) values (?,?,?,default)
-Hibernate: insert into users (email,password,username,id) values (?,?,?,default)
-Hibernate: insert into users (email,password,username,id) values (?,?,?,default)
-Hibernate: insert into users (email,password,username,id) values (?,?,?,default)
-2026-09-24T01:51:54.844+02:00  WARN 23044 --- [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-09-24T01:51:55.135+02:00  INFO 23044 --- [  restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:exam'
-2026-09-24T01:51:55.219+02:00  INFO 23044 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2026-09-24T01:51:55.269+02:00  INFO 23044 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2026-09-24T01:51:55.277+02:00  INFO 23044 --- [  restartedMain] be.ucll.exam.Application                 : Started Application in 7.961 seconds (process running for 8.522)
-2026-09-24T01:55:31.232+02:00  INFO 23044 --- [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 18 class path changes (0 additions, 17 deletions, 1 modification)
-2026-09-24T01:55:31.236+02:00  INFO 23044 --- [       Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2026-09-24T01:55:31.248+02:00  INFO 23044 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2026-09-24T01:55:31.251+02:00  INFO 23044 --- [       Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-09-24T01:55:31.256+02:00  WARN 23044 --- [       Thread-5] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
-2026-09-24T01:55:31.257+02:00  INFO 23044 --- [       Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-09-24T01:55:31.258+02:00  INFO 23044 --- [       Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-
-  .   ____          _            __ _ _
- /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
-( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
- \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
-  '  |____| .__|_| |_|_| |_\__, | / / / /
- =========|_|==============|___/=/_/_/_/
-
- :: Spring Boot ::                (v3.4.1)
-
-2026-09-24T01:55:31.335+02:00  INFO 23044 --- [  restartedMain] be.ucll.exam.Application                 : Starting Application using Java 21.0.10 with PID 23044 (C:\Users\alsha\Desktop\taim-me-projects\LoopIn\server\startcode\target\classes started by alsha in C:\Users\alsha\Desktop\taim-me-projects\LoopIn\server\startcode)
-2026-09-24T01:55:31.336+02:00  INFO 23044 --- [  restartedMain] be.ucll.exam.Application                 : No active profile set, falling back to 1 default profile: "default"
-2026-09-24T01:55:31.577+02:00  INFO 23044 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-09-24T01:55:31.597+02:00  INFO 23044 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 3 JPA repository interfaces.
-2026-09-24T01:55:31.714+02:00  INFO 23044 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2026-09-24T01:55:31.715+02:00  INFO 23044 --- [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-09-24T01:55:31.716+02:00  INFO 23044 --- [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
-2026-09-24T01:55:31.742+02:00  INFO 23044 --- [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2026-09-24T01:55:31.743+02:00  INFO 23044 --- [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 404 ms
-2026-09-24T01:55:31.777+02:00  INFO 23044 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
-2026-09-24T01:55:31.780+02:00  INFO 23044 --- [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:exam user=OWNER
-2026-09-24T01:55:31.780+02:00  INFO 23044 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
-2026-09-24T01:55:31.803+02:00  INFO 23044 --- [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-09-24T01:55:31.806+02:00  INFO 23044 --- [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2026-09-24T01:55:31.820+02:00  INFO 23044 --- [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-09-24T01:55:31.822+02:00  WARN 23044 --- [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-09-24T01:55:31.823+02:00  INFO 23044 --- [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
-	Database driver: undefined/unknown
-	Database version: 2.3.232
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-09-24T01:55:31.906+02:00  INFO 23044 --- [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-09-24T01:55:31.907+02:00  INFO 23044 --- [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-Hibernate: insert into users (email,password,username,id) values (?,?,?,default)
-Hibernate: insert into users (email,password,username,id) values (?,?,?,default)
-Hibernate: insert into users (email,password,username,id) values (?,?,?,default)
-Hibernate: insert into users (email,password,username,id) values (?,?,?,default)
-2026-09-24T01:55:32.099+02:00  WARN 23044 --- [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-09-24T01:55:32.177+02:00  INFO 23044 --- [  restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:exam'
-2026-09-24T01:55:32.198+02:00  INFO 23044 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2026-09-24T01:55:32.208+02:00  INFO 23044 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2026-09-24T01:55:32.214+02:00  INFO 23044 --- [  restartedMain] be.ucll.exam.Application                 : Started Application in 0.911 seconds (process running for 225.457)
-2026-09-24T01:55:32.217+02:00  INFO 23044 --- [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2026-09-24T01:55:33.614+02:00  INFO 23044 --- [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 20 class path changes (17 additions, 0 deletions, 3 modifications)
-2026-09-24T01:55:33.616+02:00  INFO 23044 --- [       Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2026-09-24T01:55:33.623+02:00  INFO 23044 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2026-09-24T01:55:33.625+02:00  INFO 23044 --- [       Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-09-24T01:55:33.626+02:00  WARN 23044 --- [       Thread-7] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
-2026-09-24T01:55:33.627+02:00  INFO 23044 --- [       Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
-2026-09-24T01:55:33.627+02:00  INFO 23044 --- [       Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
-
-  .   ____          _            __ _ _
- /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
-( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
- \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
-  '  |____| .__|_| |_|_| |_\__, | / / / /
- =========|_|==============|___/=/_/_/_/
-
- :: Spring Boot ::                (v3.4.1)
-
-2026-09-24T01:55:33.728+02:00  INFO 23044 --- [  restartedMain] be.ucll.exam.Application                 : Starting Application using Java 21.0.10 with PID 23044 (C:\Users\alsha\Desktop\taim-me-projects\LoopIn\server\startcode\target\classes started by alsha in C:\Users\alsha\Desktop\taim-me-projects\LoopIn\server\startcode)
-2026-09-24T01:55:33.729+02:00  INFO 23044 --- [  restartedMain] be.ucll.exam.Application                 : No active profile set, falling back to 1 default profile: "default"
-2026-09-24T01:55:33.900+02:00  INFO 23044 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-09-24T01:55:33.916+02:00  INFO 23044 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 3 JPA repository interfaces.
-2026-09-24T01:55:33.990+02:00  INFO 23044 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2026-09-24T01:55:33.991+02:00  INFO 23044 --- [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-09-24T01:55:33.991+02:00  INFO 23044 --- [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
-2026-09-24T01:55:34.011+02:00  INFO 23044 --- [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2026-09-24T01:55:34.012+02:00  INFO 23044 --- [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 281 ms
-2026-09-24T01:55:34.038+02:00  INFO 23044 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
-2026-09-24T01:55:34.041+02:00  INFO 23044 --- [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection conn20: url=jdbc:h2:mem:exam user=OWNER
-2026-09-24T01:55:34.041+02:00  INFO 23044 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
-2026-09-24T01:55:34.053+02:00  INFO 23044 --- [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-09-24T01:55:34.056+02:00  INFO 23044 --- [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2026-09-24T01:55:34.064+02:00  INFO 23044 --- [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-09-24T01:55:34.066+02:00  WARN 23044 --- [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-09-24T01:55:34.066+02:00  INFO 23044 --- [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
-	Database driver: undefined/unknown
-	Database version: 2.3.232
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-09-24T01:55:34.135+02:00  INFO 23044 --- [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-09-24T01:55:34.135+02:00  INFO 23044 --- [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-Hibernate: insert into users (email,password,username,id) values (?,?,?,default)
-Hibernate: insert into users (email,password,username,id) values (?,?,?,default)
-Hibernate: insert into users (email,password,username,id) values (?,?,?,default)
-Hibernate: insert into users (email,password,username,id) values (?,?,?,default)
-2026-09-24T01:55:34.289+02:00  WARN 23044 --- [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-09-24T01:55:34.340+02:00  INFO 23044 --- [  restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:exam'
-2026-09-24T01:55:34.352+02:00  INFO 23044 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2026-09-24T01:55:34.361+02:00  INFO 23044 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2026-09-24T01:55:34.364+02:00  INFO 23044 --- [  restartedMain] be.ucll.exam.Application                 : Started Application in 0.664 seconds (process running for 227.607)
-2026-09-24T01:55:34.366+02:00  INFO 23044 --- [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2026-09-24T01:55:53.971+02:00  INFO 23044 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-09-24T01:55:53.971+02:00  INFO 23044 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-09-24T01:55:53.971+02:00  INFO 23044 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-Hibernate: select u1_0.id,u1_0.email,u1_0.password,u1_0.username from users u1_0
-Hibernate: select f1_0.id,f1_0.receiver_username,f1_0.sender_username,f1_0.status from friendships f1_0 where lower(f1_0.receiver_username)=lower(?) and lower(f1_0.status)=lower(?)
-Hibernate: select f1_0.id,f1_0.receiver_username,f1_0.sender_username,f1_0.status from friendships f1_0 where (lower(f1_0.sender_username)=lower(?) or lower(f1_0.receiver_username)=lower(?)) and lower(f1_0.status)=lower(?)
-Hibernate: select f1_0.id,f1_0.receiver_username,f1_0.sender_username,f1_0.status from friendships f1_0
-Hibernate: select f1_0.id,f1_0.receiver_username,f1_0.sender_username,f1_0.status from friendships f1_0 where lower(f1_0.receiver_username)=lower(?) and lower(f1_0.status)=lower(?)
-Hibernate: select f1_0.id,f1_0.receiver_username,f1_0.sender_username,f1_0.status from friendships f1_0
-Hibernate: select f1_0.id,f1_0.receiver_username,f1_0.sender_username,f1_0.status from friendships f1_0 where lower(f1_0.receiver_username)=lower(?) and lower(f1_0.status)=lower(?)
-Hibernate: select f1_0.id,f1_0.receiver_username,f1_0.sender_username,f1_0.status from friendships f1_0 where (lower(f1_0.sender_username)=lower(?) or lower(f1_0.receiver_username)=lower(?)) and lower(f1_0.status)=lower(?)
-Hibernate: select f1_0.id,f1_0.receiver_username,f1_0.sender_username,f1_0.status from friendships f1_0
-Hibernate: select f1_0.id,f1_0.receiver_username,f1_0.sender_username,f1_0.status from friendships f1_0 where lower(f1_0.receiver_username)=lower(?) and lower(f1_0.status)=lower(?)
-Hibernate: select f1_0.id,f1_0.receiver_username,f1_0.sender_username,f1_0.status from friendships f1_0
-Hibernate: insert into friendships (receiver_username,sender_username,status,id) values (?,?,?,default)
-Hibernate: select f1_0.id,f1_0.receiver_username,f1_0.sender_username,f1_0.status from friendships f1_0 where lower(f1_0.receiver_username)=lower(?) and lower(f1_0.status)=lower(?)
-Hibernate: select f1_0.id,f1_0.receiver_username,f1_0.sender_username,f1_0.status from friendships f1_0
-2026-09-24T01:58:40.436+02:00  INFO 23044 --- [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2026-09-24T01:58:40.439+02:00  INFO 23044 --- [      Thread-12] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2026-09-24T01:58:40.447+02:00  INFO 23044 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2026-09-24T01:58:40.448+02:00  INFO 23044 --- [      Thread-12] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-09-24T01:58:40.450+02:00  WARN 23044 --- [      Thread-12] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
-2026-09-24T01:58:40.451+02:00  INFO 23044 --- [      Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
-2026-09-24T01:58:40.451+02:00  INFO 23044 --- [      Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
-
-  .   ____          _            __ _ _
- /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
-( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
- \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
-  '  |____| .__|_| |_|_| |_\__, | / / / /
- =========|_|==============|___/=/_/_/_/
-
- :: Spring Boot ::                (v3.4.1)
-
-2026-09-24T01:58:40.541+02:00  INFO 23044 --- [  restartedMain] be.ucll.exam.Application                 : Starting Application using Java 21.0.10 with PID 23044 (C:\Users\alsha\Desktop\taim-me-projects\LoopIn\server\startcode\target\classes started by alsha in C:\Users\alsha\Desktop\taim-me-projects\LoopIn\server\startcode)
-2026-09-24T01:58:40.541+02:00  INFO 23044 --- [  restartedMain] be.ucll.exam.Application                 : No active profile set, falling back to 1 default profile: "default"
-2026-09-24T01:58:40.688+02:00  INFO 23044 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-09-24T01:58:40.702+02:00  INFO 23044 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 3 JPA repository interfaces.
-2026-09-24T01:58:40.771+02:00  INFO 23044 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
-2026-09-24T01:58:40.772+02:00  INFO 23044 --- [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-09-24T01:58:40.772+02:00  INFO 23044 --- [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
-2026-09-24T01:58:40.790+02:00  INFO 23044 --- [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2026-09-24T01:58:40.790+02:00  INFO 23044 --- [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 247 ms
-2026-09-24T01:58:40.814+02:00  INFO 23044 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
-2026-09-24T01:58:40.816+02:00  INFO 23044 --- [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection conn30: url=jdbc:h2:mem:exam user=OWNER
-2026-09-24T01:58:40.816+02:00  INFO 23044 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
-2026-09-24T01:58:40.831+02:00  INFO 23044 --- [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-09-24T01:58:40.833+02:00  INFO 23044 --- [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2026-09-24T01:58:40.841+02:00  INFO 23044 --- [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-09-24T01:58:40.844+02:00  WARN 23044 --- [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-09-24T01:58:40.844+02:00  INFO 23044 --- [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-4)']
-	Database driver: undefined/unknown
-	Database version: 2.3.232
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-09-24T01:58:40.905+02:00  INFO 23044 --- [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-09-24T01:58:40.906+02:00  INFO 23044 --- [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-Hibernate: insert into users (email,password,username,id) values (?,?,?,default)
-Hibernate: insert into users (email,password,username,id) values (?,?,?,default)
-Hibernate: insert into users (email,password,username,id) values (?,?,?,default)
-Hibernate: insert into users (email,password,username,id) values (?,?,?,default)
-2026-09-24T01:58:41.037+02:00  WARN 23044 --- [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-09-24T01:58:41.083+02:00  INFO 23044 --- [  restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:exam'
-2026-09-24T01:58:41.092+02:00  INFO 23044 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2026-09-24T01:58:41.100+02:00  INFO 23044 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
-2026-09-24T01:58:41.104+02:00  INFO 23044 --- [  restartedMain] be.ucll.exam.Application                 : Started Application in 0.589 seconds (process running for 414.347)
-2026-09-24T01:58:41.105+02:00  INFO 23044 --- [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2026-09-24T01:59:00.880+02:00  INFO 23044 --- [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2026-09-24T01:59:00.883+02:00  INFO 23044 --- [      Thread-18] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2026-09-24T01:59:00.890+02:00  INFO 23044 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2026-09-24T01:59:00.891+02:00  INFO 23044 --- [      Thread-18] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-09-24T01:59:00.892+02:00  WARN 23044 --- [      Thread-18] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
-2026-09-24T01:59:00.893+02:00  INFO 23044 --- [      Thread-18] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
-2026-09-24T01:59:00.893+02:00  INFO 23044 --- [      Thread-18] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
-
-  .   ____          _            __ _ _
- /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
-( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
- \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
-  '  |____| .__|_| |_|_| |_\__, | / / / /
- =========|_|==============|___/=/_/_/_/
-
- :: Spring Boot ::                (v3.4.1)
-
-2026-09-24T01:59:00.975+02:00  INFO 23044 --- [  restartedMain] be.ucll.exam.Application                 : Starting Application using Java 21.0.10 with PID 23044 (C:\Users\alsha\Desktop\taim-me-projects\LoopIn\server\startcode\target\classes started by alsha in C:\Users\alsha\Desktop\taim-me-projects\LoopIn\server\startcode)
-2026-09-24T01:59:00.976+02:00  INFO 23044 --- [  restartedMain] be.ucll.exam.Application                 : No active profile set, falling back to 1 default profile: "default"
-2026-09-24T01:59:01.119+02:00  INFO 23044 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-09-24T01:59:01.134+02:00  INFO 23044 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 3 JPA repository interfaces.
-2026-09-24T01:59:01.195+02:00  INFO 23044 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8989 (http)
-2026-09-24T01:59:01.196+02:00  INFO 23044 --- [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-09-24T01:59:01.196+02:00  INFO 23044 --- [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
-2026-09-24T01:59:01.213+02:00  INFO 23044 --- [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2026-09-24T01:59:01.214+02:00  INFO 23044 --- [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 237 ms
-2026-09-24T01:59:01.235+02:00  INFO 23044 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
-2026-09-24T01:59:01.238+02:00  INFO 23044 --- [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection conn40: url=jdbc:h2:mem:exam user=OWNER
-2026-09-24T01:59:01.238+02:00  INFO 23044 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
-2026-09-24T01:59:01.251+02:00  INFO 23044 --- [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-09-24T01:59:01.253+02:00  INFO 23044 --- [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2026-09-24T01:59:01.262+02:00  INFO 23044 --- [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-09-24T01:59:01.264+02:00  WARN 23044 --- [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-09-24T01:59:01.264+02:00  INFO 23044 --- [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-5)']
-	Database driver: undefined/unknown
-	Database version: 2.3.232
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-09-24T01:59:01.325+02:00  INFO 23044 --- [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-09-24T01:59:01.327+02:00  INFO 23044 --- [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-Hibernate: insert into users (email,password,username,id) values (?,?,?,default)
-Hibernate: insert into users (email,password,username,id) values (?,?,?,default)
-Hibernate: insert into users (email,password,username,id) values (?,?,?,default)
-Hibernate: insert into users (email,password,username,id) values (?,?,?,default)
-2026-09-24T01:59:01.442+02:00  WARN 23044 --- [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-09-24T01:59:01.480+02:00  INFO 23044 --- [  restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:exam'
-2026-09-24T01:59:01.489+02:00  INFO 23044 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2026-09-24T01:59:01.497+02:00  INFO 23044 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8989 (http) with context path '/'
-2026-09-24T01:59:01.500+02:00  INFO 23044 --- [  restartedMain] be.ucll.exam.Application                 : Started Application in 0.548 seconds (process running for 434.742)
-2026-09-24T01:59:01.501+02:00  INFO 23044 --- [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-[INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
-[INFO] ------------------------------------------------------------------------
-[INFO] Total time:  09:13 min
-[INFO] Finished at: 2026-09-24T02:00:55+02:00
-[INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:3.4.1:run (default-cli) on project exam: Process terminated with exit code: -1 -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

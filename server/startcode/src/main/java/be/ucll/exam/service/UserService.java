@@ -4,6 +4,7 @@ import be.ucll.exam.model.User;
 import be.ucll.exam.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 
@@ -17,35 +18,44 @@ import java.util.concurrent.ConcurrentHashMap;
 @Service
 public class UserService {
     private final UserRepository userRepository;
+    private final PasswordEncoder passwordEncoder;
+
     private static final Duration SESSION_TIMEOUT = Duration.ofHours(24);
     private final Map<String, UserSession> sessions = new ConcurrentHashMap<>();
 
     @Autowired
-    public UserService(UserRepository userRepository) {
+    public UserService(UserRepository userRepository, PasswordEncoder passwordEncoder) {
         this.userRepository = userRepository;
+        this.passwordEncoder = passwordEncoder;
     }
 
     public List<User> getAllUsers() {
         return userRepository.findAll();
     }
 
-
     public User addUserAndCheckIfUserNameIsValid(User user) {
         String username = user.getUsername();
 
         for (User everyUser : getAllUsers()) {
-            if (everyUser.getUsername().equals(username)) {
-                throw new RuntimeException("User already exists");
+            if (everyUser.getUsername().equalsIgnoreCase(username)) {
+                throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "User already exists");
             }
         }
-        userRepository.save(user);
-        return user;
+
+        // Hash the plain text password before saving to DB
+        String hashedPassword = passwordEncoder.encode(user.getPassword());
+        user.setPassword(hashedPassword);
+
+        return userRepository.save(user);
     }
 
-    public LoginResponse findUserAndValidatedUserPassword(String username, String password) {
+    public LoginResponse findUserAndValidatedUserPassword(String usernameOrEmail, String password) {
         for (User everyUser : getAllUsers()) {
-            if ((everyUser.getUsername().equals(username) || everyUser.getEmail().equals(username))
-                    && everyUser.getPassword().equals(password)) {
+            boolean isUsernameOrEmailMatch = everyUser.getUsername().equalsIgnoreCase(usernameOrEmail)
+                    || everyUser.getEmail().equalsIgnoreCase(usernameOrEmail);
+
+            // Compare raw input password against the hashed database password
+            if (isUsernameOrEmailMatch && passwordEncoder.matches(password, everyUser.getPassword())) {
                 String token = UUID.randomUUID().toString();
                 Instant expiresAt = Instant.now().plus(SESSION_TIMEOUT);
                 sessions.put(token, new UserSession(everyUser.getUsername(), expiresAt));

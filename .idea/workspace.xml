@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="16107540-dce9-460c-944c-d03151310e22" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/server/startcode/src/main/java/be/ucll/exam/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/LoopIn.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/LoopIn.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/startcode/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/startcode/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/startcode/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/startcode/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/startcode/.idea/material_theme_project_new.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/startcode/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/startcode/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/startcode/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/startcode/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/startcode/src/main/java/be/ucll/exam/controller/FriendshipRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/startcode/src/main/java/be/ucll/exam/controller/FriendshipRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/startcode/src/main/java/be/ucll/exam/controller/MessageRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/startcode/src/main/java/be/ucll/exam/controller/MessageRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/startcode/src/main/java/be/ucll/exam/controller/UserRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/startcode/src/main/java/be/ucll/exam/controller/UserRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/startcode/src/main/java/be/ucll/exam/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/startcode/src/main/java/be/ucll/exam/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/config/WebSocketConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/config/WebSocketConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/controller/FriendshipRestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/controller/FriendshipRestController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/controller/MessageRestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/controller/MessageRestController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/controller/UserRestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/controller/UserRestController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/model/ChatRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/model/ChatRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/model/FriendRequestUpdate.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/model/FriendRequestUpdate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/model/Friendship.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/model/Friendship.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/model/LoginRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/model/LoginRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/model/Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/model/Message.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/model/RealtimeMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/model/RealtimeMessage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/repository/DbInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/repository/DbInitializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/repository/FriendshipRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/repository/FriendshipRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/repository/MessageRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/repository/MessageRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/repository/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/service/FriendshipService.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/service/FriendshipService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/service/MessageService.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/service/MessageService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/service/RealtimeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/service/RealtimeService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/service/UserService$LoginResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/service/UserService$LoginResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/service/UserService$UserSession.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/service/UserService$UserSession.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/websocket/RealtimeWebSocketHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/websocket/RealtimeWebSocketHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/startcode/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/startcode/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/startcode/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/startcode/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/startcode/target/spring-boot-run.err.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/startcode/target/spring-boot-run.log" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="3JrsfK8hzhpl0w1c8DDXdBB5lg7" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "Spring Boot.Application.executor": "Run",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "python.packages.toolwindow.project.migrated.to.right.top.v2": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
+      <module name="exam" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="be.ucll.exam.Application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="be.ucll.exam.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.Application" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-a203e0a19954-intellij.indexing.shared.core-IU-262.10315.125" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.10315.125" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="16107540-dce9-460c-944c-d03151310e22" name="Changes" comment="" />
+      <created>1790430625830</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1790430625830</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
