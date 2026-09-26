@@ -5,53 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="16107540-dce9-460c-944c-d03151310e22" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/server/startcode/src/main/java/be/ucll/exam/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/LoopIn.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/LoopIn.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/startcode/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/startcode/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/startcode/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/startcode/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/startcode/.idea/material_theme_project_new.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/startcode/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/startcode/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/startcode/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/startcode/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/startcode/src/main/java/be/ucll/exam/controller/FriendshipRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/startcode/src/main/java/be/ucll/exam/controller/FriendshipRestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/startcode/src/main/java/be/ucll/exam/controller/MessageRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/startcode/src/main/java/be/ucll/exam/controller/MessageRestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/startcode/src/main/java/be/ucll/exam/controller/UserRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/startcode/src/main/java/be/ucll/exam/controller/UserRestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/startcode/src/main/java/be/ucll/exam/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/startcode/src/main/java/be/ucll/exam/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/config/WebSocketConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/config/WebSocketConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/controller/FriendshipRestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/controller/FriendshipRestController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/controller/MessageRestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/controller/MessageRestController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/controller/UserRestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/controller/UserRestController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/model/ChatRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/model/ChatRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/model/FriendRequestUpdate.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/model/FriendRequestUpdate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/model/Friendship.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/model/Friendship.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/model/LoginRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/model/LoginRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/model/Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/model/Message.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/model/RealtimeMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/model/RealtimeMessage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/repository/DbInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/repository/DbInitializer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/repository/FriendshipRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/repository/FriendshipRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/repository/MessageRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/repository/MessageRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/repository/UserRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/service/FriendshipService.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/service/FriendshipService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/service/MessageService.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/service/MessageService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/service/RealtimeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/service/RealtimeService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/service/UserService$LoginResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/service/UserService$LoginResponse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/service/UserService$UserSession.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/service/UserService$UserSession.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/websocket/RealtimeWebSocketHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/startcode/target/classes/be/ucll/exam/websocket/RealtimeWebSocketHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/startcode/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/startcode/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/startcode/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/startcode/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/startcode/target/spring-boot-run.err.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/startcode/target/spring-boot-run.log" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

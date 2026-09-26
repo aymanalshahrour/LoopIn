@@ -54,7 +54,6 @@ public class UserService {
             boolean isUsernameOrEmailMatch = everyUser.getUsername().equalsIgnoreCase(usernameOrEmail)
                     || everyUser.getEmail().equalsIgnoreCase(usernameOrEmail);
 
-            // Compare raw input password against the hashed database password
             if (isUsernameOrEmailMatch && passwordEncoder.matches(password, everyUser.getPassword())) {
                 String token = UUID.randomUUID().toString();
                 Instant expiresAt = Instant.now().plus(SESSION_TIMEOUT);
